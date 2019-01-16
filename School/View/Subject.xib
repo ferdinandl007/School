@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Subject" id="iN0-l3-epB" customClass="SubjectCollectionViewCell" customModule="School" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="282"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiA-bm-gJX">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="282"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="99t-4K-cpE">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="199"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="99t-4K-cpE" secondAttribute="height" multiplier="335:199" id="AbC-cR-Ff2"/>
+                            </constraints>
+                            <string key="image">videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12</string>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-kj-DXp">
+                            <rect key="frame" x="0.0" y="200" width="335" height="82"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-xh-Ax7">
+                                    <rect key="frame" x="19" y="10" width="72" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room 123A at 9:45AM  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wr-gu-uUg">
+                                    <rect key="frame" x="19" y="41" width="181" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.55720710750000002" green="0.55633765459999995" blue="0.5764759183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nPx-kj-DXp" secondAttribute="height" multiplier="335:82" id="3Mk-fL-PgL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="99t-4K-cpE" secondAttribute="trailing" id="0YK-Py-hac"/>
+                        <constraint firstItem="99t-4K-cpE" firstAttribute="leading" secondItem="JiA-bm-gJX" secondAttribute="leading" id="Gia-z9-FPf"/>
+                        <constraint firstItem="nPx-kj-DXp" firstAttribute="leading" secondItem="JiA-bm-gJX" secondAttribute="leading" id="N8W-HR-l5c"/>
+                        <constraint firstItem="99t-4K-cpE" firstAttribute="top" secondItem="JiA-bm-gJX" secondAttribute="top" id="Tsk-9w-NEF"/>
+                        <constraint firstAttribute="bottom" secondItem="nPx-kj-DXp" secondAttribute="bottom" id="a6i-Bn-4Tu"/>
+                        <constraint firstItem="nPx-kj-DXp" firstAttribute="trailing" secondItem="99t-4K-cpE" secondAttribute="trailing" id="aF8-NT-aTh"/>
+                        <constraint firstAttribute="trailing" secondItem="nPx-kj-DXp" secondAttribute="trailing" id="dT8-3B-Iim"/>
+                        <constraint firstAttribute="trailing" secondItem="99t-4K-cpE" secondAttribute="trailing" id="pI6-oe-dWO"/>
+                        <constraint firstItem="99t-4K-cpE" firstAttribute="leading" secondItem="JiA-bm-gJX" secondAttribute="leading" id="sL5-el-ybb"/>
+                        <constraint firstItem="99t-4K-cpE" firstAttribute="top" secondItem="JiA-bm-gJX" secondAttribute="top" id="uZb-gl-9PV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JiA-bm-gJX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5Jn-ue-xCy"/>
+                <constraint firstItem="JiA-bm-gJX" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6gK-Vg-GbZ"/>
+                <constraint firstItem="JiA-bm-gJX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="CDd-IR-yqg"/>
+                <constraint firstItem="JiA-bm-gJX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZLa-KE-X1f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="content" destination="JiA-bm-gJX" id="cbx-S7-H7s"/>
+                <outlet property="image" destination="99t-4K-cpE" id="Hv3-ZT-s7j"/>
+                <outlet property="infoLabel" destination="0wr-gu-uUg" id="XbW-pd-Z2H"/>
+                <outlet property="subjectLabel" destination="ysW-xh-Ax7" id="Ykd-o3-gBC"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="-162.22826086956522"/>
+        </view>
+    </objects>
+    <resources>
+        <image width="1920" height="1080">
+            <string key="name">videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12</string>
+        </image>
+    </resources>
+</document>
