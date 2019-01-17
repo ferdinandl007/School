@@ -26,4 +26,21 @@ class Database {
         }
         return data
     }
+    
+    
+    func getCategoriesy() -> [String] {
+        return ["Today"," Groups","Appointments"]
+    }
+    func getGrupes() ->  [GenericModel] {
+        var data =  [GenericModel]()
+        for i in 1...20 {
+            data.append(GenericModel(topLeftLabel: "Group \(i)", topRightLabel: "Rome \((i * 33) % 200)", mainText: "The term voltage has been used to describe both the rating of a battery and the reading on"))
+        }
+        return data
+    }
+    
+    
+    
+    
+    
 }

@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA73DDC5EE713CE9B521DF3F59D741C /* Pods-School-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C071BCCDDBF24E92C06AD90D6A696B8 /* Pods-School-dummy.m */; };
-		10AF6E8A030DC54C71FC27E67B8C8E02 /* VegaScrollFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C24DE0124C2436F23F8E6201477BA72 /* VegaScrollFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E5249B7B5923A851640AB8ECD1C7EAA /* Pods-SchoolTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB31EF0A4E4577C626A34A4E1C0B091 /* Pods-SchoolTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FC07A8B76AE47E5E7D1812FA34CB192 /* VegaScrollFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C47FB27DDCC2C312ED5BD4F7B32031 /* VegaScrollFlowLayout-dummy.m */; };
-		43768B0FD7064FFEFEC950E1E0D85289 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		533DB4EC8C4C6052A7849819C01A3C5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		571B7B730E6F4395D260A1C025714D9C /* GravitySliderFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 775229E929F5A3D3612E4AF30F4DB58E /* GravitySliderFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE3B4C5770DA79C75EF3C88E23FF8D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		68BA65601EF0A6090D4B3D54C944789C /* Pods-SchoolUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 287D7309C5602CF1DD544E52366E745B /* Pods-SchoolUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F70552DD5E7BD35C64679415EAF4B90 /* Pods-SchoolTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B3BC3E3D28B97E3E0A1D279E25DF /* Pods-SchoolTests-dummy.m */; };
 		81055532CFFA865E96F0BCE7B18C9D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		97061A0B8D790158B055AEAC6D8BD1F1 /* Pods-School-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B56F9F841185E3BBD5013A368AECD8B4 /* Pods-School-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F663694DD7A452AB3CCF9ADB689C7D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		99CEC18B0513A1DA1A72E2F4484BF98F /* Pods-School-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B56F9F841185E3BBD5013A368AECD8B4 /* Pods-School-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35AED14068C65DD97662640008F63DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BEDE08BADD197B0C90E4687FF6D2133F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C5830F2ACA150C7192CA4813B05DC3A9 /* VegaScrollFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0225429BBAAE8140BB85B341EE0208 /* VegaScrollFlowLayout-dummy.m */; };
+		CBE90B0FAB0A5C23E167F987FDFF50F5 /* GravitySliderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E214C642EFE93C6DA81BC25164FF727 /* GravitySliderFlowLayout.swift */; };
+		D44D0301D829968CE815165EB7131568 /* GravitySliderFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C2585CCAD23798B03C1DA160A730A1 /* GravitySliderFlowLayout-dummy.m */; };
+		D9120B0E7C51D9D053D7B303B39A4C0C /* Pods-School-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C071BCCDDBF24E92C06AD90D6A696B8 /* Pods-School-dummy.m */; };
 		DBF40DD607B2E010CC855119555462DB /* Pods-SchoolUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D95E3753096AAD8CD7B5EFB8EA61A3 /* Pods-SchoolUITests-dummy.m */; };
-		E7DFFEDF24E412019A273872D9289FC4 /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */; };
+		E7BC74D9729B97629CB89FA31325FFD4 /* VegaScrollFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BC982DA7F6DC1E28FA297A87D018EE /* VegaScrollFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDB824A1FB0F9E5CC466D1DAE8B76F7F /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D53C3F696329B992C97A4B41CE9A1 /* VegaScrollFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,77 +31,92 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 65D9C35CC2A6F2F7271409E047AAE53B;
+			remoteGlobalIDString = FF31C49828EC43CFBA516A0415BE7D74;
 			remoteInfo = "Pods-School";
 		};
 		5EF8F99D4723C6D21C220AD70E2A3758 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 65D9C35CC2A6F2F7271409E047AAE53B;
+			remoteGlobalIDString = FF31C49828EC43CFBA516A0415BE7D74;
 			remoteInfo = "Pods-School";
 		};
-		90D11EEBEB3E56C13488F355DED1F007 /* PBXContainerItemProxy */ = {
+		810C0E8CECC303749AA1B3EFCD34D416 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1CB4CEBC7D57DB269FC0EC9ADA56ED3D;
+			remoteGlobalIDString = 9AF8200FA5292CC73BF0273583A983EE;
+			remoteInfo = GravitySliderFlowLayout;
+		};
+		E158A1BFA48728540FECE7268A6859C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7853F22D52F26AC77AA718C67980FB;
 			remoteInfo = VegaScrollFlowLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		076DB92FE00E49679A4312AC92C3742E /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		07E2F4DEED2ECEFE32A93CEC836BD0F4 /* GravitySliderFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GravitySliderFlowLayout-prefix.pch"; sourceTree = "<group>"; };
 		0910B3BC3E3D28B97E3E0A1D279E25DF /* Pods-SchoolTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SchoolTests-dummy.m"; sourceTree = "<group>"; };
 		09F0BB00DA02B3C5DD16EE98ECA7DACB /* Pods-SchoolTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SchoolTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		10E0C8D108EDBCEAF5386E482EB93B93 /* Pods-School-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-School-acknowledgements.plist"; sourceTree = "<group>"; };
 		22D71046BF371B6725C7C0B7EC851646 /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 		287D7309C5602CF1DD544E52366E745B /* Pods-SchoolUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SchoolUITests-umbrella.h"; sourceTree = "<group>"; };
+		2E55AD601A4AF80BC8B2E58857FDD955 /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		32C0B3FB3DE5FA932B16CB6D544C604C /* GravitySliderFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GravitySliderFlowLayout.xcconfig; sourceTree = "<group>"; };
+		36BC982DA7F6DC1E28FA297A87D018EE /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		36D95E3753096AAD8CD7B5EFB8EA61A3 /* Pods-SchoolUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SchoolUITests-dummy.m"; sourceTree = "<group>"; };
 		36F93B86FF7D20E925846A118C4FBED4 /* Pods-SchoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C786F2BAC55F1747C5BAB3EB9FB0152 /* Pods-SchoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4882DCD11E5E2F3282470A26C1B170F3 /* Pods_SchoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolTests.framework; path = "Pods-SchoolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0225429BBAAE8140BB85B341EE0208 /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
 		56E3C44D65C73266D74082332CC15F0F /* Pods-SchoolTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolTests-resources.sh"; sourceTree = "<group>"; };
 		56E6B1B6184CCA74C6C3A7348C794375 /* Pods-SchoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		575A08B12BFFD891E55D406FA7E42CB5 /* Pods-School-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-School-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5C071BCCDDBF24E92C06AD90D6A696B8 /* Pods-School-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-School-dummy.m"; sourceTree = "<group>"; };
+		5E214C642EFE93C6DA81BC25164FF727 /* GravitySliderFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GravitySliderFlowLayout.swift; path = GravitySliderFlowLayout/Classes/GravitySliderFlowLayout.swift; sourceTree = "<group>"; };
 		5F6D387980A3C5E9FEC0ADEAF1041669 /* Pods-SchoolUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolUITests-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		702F93753DB115F1D5DDEC4C0328A410 /* VegaScrollFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.xcconfig; sourceTree = "<group>"; };
 		71958978B08B66B15C6E602BF8A7BBE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775229E929F5A3D3612E4AF30F4DB58E /* GravitySliderFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GravitySliderFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		77CE08054E0074D537A2F2EB25C6721C /* Pods-SchoolUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SchoolUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7AD156934102CE1BDB5EC0419523816D /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
 		7C6205B90C914F848BB3AF78930E5C95 /* Pods-School-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-School-frameworks.sh"; sourceTree = "<group>"; };
 		8439338C4BD181BEF29D99A85053FD80 /* Pods-School.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-School.modulemap"; sourceTree = "<group>"; };
 		8696CFC7B30BDACC27934128D54C83E4 /* Pods-SchoolUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SchoolUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D1B2F96A5BA2FD641A4CC35FD34B724 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C24DE0124C2436F23F8E6201477BA72 /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		A5DA4D6BB1EE03DC2A123EB48B12B037 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9FA66F24DFD4D06A082D1AB3A0236F0 /* Pods-SchoolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SchoolTests.modulemap"; sourceTree = "<group>"; };
+		ACFE6B92E9B6C82BA338CC8758D036C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00FB7EABBC202D307542AEAEE52AF07 /* Pods-SchoolTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolTests-frameworks.sh"; sourceTree = "<group>"; };
+		B153F549B33034AE3F5AE6B19C19E6DD /* Pods_School.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_School.framework; path = "Pods-School.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15E865FB8DF3D299EEEAE6D160FCFF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56F9F841185E3BBD5013A368AECD8B4 /* Pods-School-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-School-umbrella.h"; sourceTree = "<group>"; };
-		B9C47FB27DDCC2C312ED5BD4F7B32031 /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
-		BB03E6D342BC889FBB263A3919F81F7F /* Pods_School.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_School.framework; path = "Pods-School.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB31EF0A4E4577C626A34A4E1C0B091 /* Pods-SchoolTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SchoolTests-umbrella.h"; sourceTree = "<group>"; };
-		C465CF0F02ED1C218E7986A08E757E84 /* Pods_SchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolUITests.framework; path = "Pods-SchoolUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C121BA40B605637E497109DB2D55A7EE /* GravitySliderFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GravitySliderFlowLayout.framework; path = GravitySliderFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44F902EE84E796D2279CCE6B333F469 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
 		C640295DBAA95DD8300C3AC8C717B3EB /* Pods-School-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-School-resources.sh"; sourceTree = "<group>"; };
+		CAB7899BA91ECB354410F81C47A59E72 /* Pods_SchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolUITests.framework; path = "Pods-SchoolUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD2D75DEB6D76AD26C955CFB0473E78 /* Pods-SchoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D61D808F2B08472C3E48FCF8A3CB8466 /* Pods-School.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-School.debug.xcconfig"; sourceTree = "<group>"; };
+		D680827E7CBA7378E8A3209A44E2618C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C2585CCAD23798B03C1DA160A730A1 /* GravitySliderFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GravitySliderFlowLayout-dummy.m"; sourceTree = "<group>"; };
 		D9879AC6671AD2EAEA697A35FF22BEE4 /* Pods-SchoolUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolUITests-frameworks.sh"; sourceTree = "<group>"; };
-		EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		E6679B8F3ACB6FA08FB6738927DB6384 /* VegaScrollFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.xcconfig; sourceTree = "<group>"; };
+		E8C5B0EBBEBE1D9FEFD244865E4C6E15 /* GravitySliderFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GravitySliderFlowLayout.modulemap; sourceTree = "<group>"; };
 		EB48FABF27A343A37B4A95014D80DD92 /* Pods-SchoolUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SchoolUITests.modulemap"; sourceTree = "<group>"; };
-		F61142B7C88E4F3F0E962AF01B607693 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14D53C3F696329B992C97A4B41CE9A1 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		F32C1114C75FFBCB9503CE0CA7798B05 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F713667B6D473279DFED354582A56FF6 /* Pods-SchoolTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SchoolTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F9FD9633C09AB46E6585694803710F39 /* Pods_SchoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolTests.framework; path = "Pods-SchoolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F99D47A31E37E105EB15BE1E3D81399 /* Frameworks */ = {
+		0DE772BD4FD760CB579860B4C239399F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533DB4EC8C4C6052A7849819C01A3C5D /* Foundation.framework in Frameworks */,
+				8F663694DD7A452AB3CCF9ADB689C7D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,14 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4A6415AD0C10F79CBC7C2D3F1FF32A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43768B0FD7064FFEFEC950E1E0D85289 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D363553A4040FA108D9CBF4F9F473DBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,17 +136,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E43C43BF76F361D1215B4662C8C1CFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDE08BADD197B0C90E4687FF6D2133F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9981F744096FC91D6C3C518EE82A80A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE3B4C5770DA79C75EF3C88E23FF8D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A1C684B98CC24B6773BA0A32E7F5818 /* VegaScrollFlowLayout */ = {
+		23F4096309BC5E682E7D47AFEBBC4A77 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */,
-				74B6FE069FFD451DCE1A8B080679B034 /* Support Files */,
+				5EE4355B2D2883259DD1BA7CA993C29B /* GravitySliderFlowLayout */,
+				50ADFEE9AC740C73C2AD19D7616874D5 /* VegaScrollFlowLayout */,
 			);
-			name = VegaScrollFlowLayout;
-			path = VegaScrollFlowLayout;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2650A3CCCBE6F617531C80430E2ECEED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C121BA40B605637E497109DB2D55A7EE /* GravitySliderFlowLayout.framework */,
+				B153F549B33034AE3F5AE6B19C19E6DD /* Pods_School.framework */,
+				4882DCD11E5E2F3282470A26C1B170F3 /* Pods_SchoolTests.framework */,
+				CAB7899BA91ECB354410F81C47A59E72 /* Pods_SchoolUITests.framework */,
+				F32C1114C75FFBCB9503CE0CA7798B05 /* VegaScrollFlowLayout.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2C1B3AB258DA7F036FD3B9393087E550 /* Pods-SchoolTests */ = {
@@ -156,6 +194,40 @@
 			path = "Target Support Files/Pods-SchoolTests";
 			sourceTree = "<group>";
 		};
+		442ED9ED14F41F13C64B1F02ED1EE334 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE6B92E9B6C82BA338CC8758D036C1 /* Info.plist */,
+				C44F902EE84E796D2279CCE6B333F469 /* VegaScrollFlowLayout.modulemap */,
+				E6679B8F3ACB6FA08FB6738927DB6384 /* VegaScrollFlowLayout.xcconfig */,
+				4E0225429BBAAE8140BB85B341EE0208 /* VegaScrollFlowLayout-dummy.m */,
+				2E55AD601A4AF80BC8B2E58857FDD955 /* VegaScrollFlowLayout-prefix.pch */,
+				36BC982DA7F6DC1E28FA297A87D018EE /* VegaScrollFlowLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VegaScrollFlowLayout";
+			sourceTree = "<group>";
+		};
+		50ADFEE9AC740C73C2AD19D7616874D5 /* VegaScrollFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F14D53C3F696329B992C97A4B41CE9A1 /* VegaScrollFlowLayout.swift */,
+				442ED9ED14F41F13C64B1F02ED1EE334 /* Support Files */,
+			);
+			name = VegaScrollFlowLayout;
+			path = VegaScrollFlowLayout;
+			sourceTree = "<group>";
+		};
+		5EE4355B2D2883259DD1BA7CA993C29B /* GravitySliderFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5E214C642EFE93C6DA81BC25164FF727 /* GravitySliderFlowLayout.swift */,
+				681FDEF7CB9EB09E747FF0DFC44C8799 /* Support Files */,
+			);
+			name = GravitySliderFlowLayout;
+			path = GravitySliderFlowLayout;
+			sourceTree = "<group>";
+		};
 		609EACED21CEDCBAF353CBC3B4D330A4 /* Pods-SchoolUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +246,20 @@
 			path = "Target Support Files/Pods-SchoolUITests";
 			sourceTree = "<group>";
 		};
+		681FDEF7CB9EB09E747FF0DFC44C8799 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8C5B0EBBEBE1D9FEFD244865E4C6E15 /* GravitySliderFlowLayout.modulemap */,
+				32C0B3FB3DE5FA932B16CB6D544C604C /* GravitySliderFlowLayout.xcconfig */,
+				D7C2585CCAD23798B03C1DA160A730A1 /* GravitySliderFlowLayout-dummy.m */,
+				07E2F4DEED2ECEFE32A93CEC836BD0F4 /* GravitySliderFlowLayout-prefix.pch */,
+				775229E929F5A3D3612E4AF30F4DB58E /* GravitySliderFlowLayout-umbrella.h */,
+				D680827E7CBA7378E8A3209A44E2618C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GravitySliderFlowLayout";
+			sourceTree = "<group>";
+		};
 		6FD0EAAC5464D93F7DA3FA0E550740E2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,37 +270,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		74B6FE069FFD451DCE1A8B080679B034 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F61142B7C88E4F3F0E962AF01B607693 /* Info.plist */,
-				7AD156934102CE1BDB5EC0419523816D /* VegaScrollFlowLayout.modulemap */,
-				702F93753DB115F1D5DDEC4C0328A410 /* VegaScrollFlowLayout.xcconfig */,
-				B9C47FB27DDCC2C312ED5BD4F7B32031 /* VegaScrollFlowLayout-dummy.m */,
-				076DB92FE00E49679A4312AC92C3742E /* VegaScrollFlowLayout-prefix.pch */,
-				9C24DE0124C2436F23F8E6201477BA72 /* VegaScrollFlowLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/VegaScrollFlowLayout";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9B2A24A80D8BCC438660993F035CD212 /* Pods */,
-				DD0B93FD3C2E900530E0C2C0FD1EDD44 /* Products */,
+				23F4096309BC5E682E7D47AFEBBC4A77 /* Pods */,
+				2650A3CCCBE6F617531C80430E2ECEED /* Products */,
 				6FD0EAAC5464D93F7DA3FA0E550740E2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9B2A24A80D8BCC438660993F035CD212 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A1C684B98CC24B6773BA0A32E7F5818 /* VegaScrollFlowLayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -231,17 +295,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		DD0B93FD3C2E900530E0C2C0FD1EDD44 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BB03E6D342BC889FBB263A3919F81F7F /* Pods_School.framework */,
-				F9FD9633C09AB46E6585694803710F39 /* Pods_SchoolTests.framework */,
-				C465CF0F02ED1C218E7986A08E757E84 /* Pods_SchoolUITests.framework */,
-				8D1B2F96A5BA2FD641A4CC35FD34B724 /* VegaScrollFlowLayout.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EA189E60DEDE0EB56FF996CA56A41B9E /* Pods-School */ = {
@@ -265,19 +318,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		067742495BF1393912E50B2C23593D64 /* Headers */ = {
+		43EE3D41280702ACD7A71A8C69436931 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10AF6E8A030DC54C71FC27E67B8C8E02 /* VegaScrollFlowLayout-umbrella.h in Headers */,
+				99CEC18B0513A1DA1A72E2F4484BF98F /* Pods-School-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		547FCA054DB84D77B818070A1D2A77F3 /* Headers */ = {
+		4650E19AA4786B6A5FD03DBAE40161D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97061A0B8D790158B055AEAC6D8BD1F1 /* Pods-School-umbrella.h in Headers */,
+				E7BC74D9729B97629CB89FA31325FFD4 /* VegaScrollFlowLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +339,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				68BA65601EF0A6090D4B3D54C944789C /* Pods-SchoolUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1044A347B53B733D4A60BF4EE7E4BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571B7B730E6F4395D260A1C025714D9C /* GravitySliderFlowLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,23 +361,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1CB4CEBC7D57DB269FC0EC9ADA56ED3D /* VegaScrollFlowLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA39FD03937191616A50269AC771155E /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */;
-			buildPhases = (
-				529E41D6A6AE2920D82B288DCF4C7C90 /* Sources */,
-				2F99D47A31E37E105EB15BE1E3D81399 /* Frameworks */,
-				067742495BF1393912E50B2C23593D64 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VegaScrollFlowLayout;
-			productName = VegaScrollFlowLayout;
-			productReference = 8D1B2F96A5BA2FD641A4CC35FD34B724 /* VegaScrollFlowLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		519C078B111953E1E7430977F435102E /* Pods-SchoolTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D06F8C2C2CED483AF80DC4C1EE9A6D89 /* Build configuration list for PBXNativeTarget "Pods-SchoolTests" */;
@@ -332,25 +376,41 @@
 			);
 			name = "Pods-SchoolTests";
 			productName = "Pods-SchoolTests";
-			productReference = F9FD9633C09AB46E6585694803710F39 /* Pods_SchoolTests.framework */;
+			productReference = 4882DCD11E5E2F3282470A26C1B170F3 /* Pods_SchoolTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		65D9C35CC2A6F2F7271409E047AAE53B /* Pods-School */ = {
+		9AF8200FA5292CC73BF0273583A983EE /* GravitySliderFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B23651DAD67F5A55C97C387D56D52686 /* Build configuration list for PBXNativeTarget "Pods-School" */;
+			buildConfigurationList = 46C4E317928D037CDC837A4802AA0887 /* Build configuration list for PBXNativeTarget "GravitySliderFlowLayout" */;
 			buildPhases = (
-				3DEB1555BF9C499678CE6A87B5D7DEF7 /* Sources */,
-				A4A6415AD0C10F79CBC7C2D3F1FF32A6 /* Frameworks */,
-				547FCA054DB84D77B818070A1D2A77F3 /* Headers */,
+				EF039474E0CE92F847B75ECEB2FBF308 /* Sources */,
+				E43C43BF76F361D1215B4662C8C1CFC1 /* Frameworks */,
+				AA1044A347B53B733D4A60BF4EE7E4BB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				388A21BF4DB169C7F326FB996949B242 /* PBXTargetDependency */,
 			);
-			name = "Pods-School";
-			productName = "Pods-School";
-			productReference = BB03E6D342BC889FBB263A3919F81F7F /* Pods_School.framework */;
+			name = GravitySliderFlowLayout;
+			productName = GravitySliderFlowLayout;
+			productReference = C121BA40B605637E497109DB2D55A7EE /* GravitySliderFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA7853F22D52F26AC77AA718C67980FB /* VegaScrollFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75746273715BBAA0BBFCFDC4F50C781 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */;
+			buildPhases = (
+				DF8EB1E70701DE3E033455D9DC85F0BD /* Sources */,
+				0DE772BD4FD760CB579860B4C239399F /* Frameworks */,
+				4650E19AA4786B6A5FD03DBAE40161D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegaScrollFlowLayout;
+			productName = VegaScrollFlowLayout;
+			productReference = F32C1114C75FFBCB9503CE0CA7798B05 /* VegaScrollFlowLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BBE3E405CF8430B9220E6A819D27D866 /* Pods-SchoolUITests */ = {
@@ -368,7 +428,26 @@
 			);
 			name = "Pods-SchoolUITests";
 			productName = "Pods-SchoolUITests";
-			productReference = C465CF0F02ED1C218E7986A08E757E84 /* Pods_SchoolUITests.framework */;
+			productReference = CAB7899BA91ECB354410F81C47A59E72 /* Pods_SchoolUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF31C49828EC43CFBA516A0415BE7D74 /* Pods-School */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6CF4C700AA3B04BF8972FB3D5C668B /* Build configuration list for PBXNativeTarget "Pods-School" */;
+			buildPhases = (
+				68B6EAFE1D2AA248DEC39E2B87CB5EDA /* Sources */,
+				E9981F744096FC91D6C3C518EE82A80A /* Frameworks */,
+				43EE3D41280702ACD7A71A8C69436931 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93193211A510E34F9BC16B5090965542 /* PBXTargetDependency */,
+				18B59B081483FDF1529D958B6664D93F /* PBXTargetDependency */,
+			);
+			name = "Pods-School";
+			productName = "Pods-School";
+			productReference = B153F549B33034AE3F5AE6B19C19E6DD /* Pods_School.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -388,41 +467,33 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DD0B93FD3C2E900530E0C2C0FD1EDD44 /* Products */;
+			productRefGroup = 2650A3CCCBE6F617531C80430E2ECEED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65D9C35CC2A6F2F7271409E047AAE53B /* Pods-School */,
+				9AF8200FA5292CC73BF0273583A983EE /* GravitySliderFlowLayout */,
+				FF31C49828EC43CFBA516A0415BE7D74 /* Pods-School */,
 				519C078B111953E1E7430977F435102E /* Pods-SchoolTests */,
 				BBE3E405CF8430B9220E6A819D27D866 /* Pods-SchoolUITests */,
-				1CB4CEBC7D57DB269FC0EC9ADA56ED3D /* VegaScrollFlowLayout */,
+				AA7853F22D52F26AC77AA718C67980FB /* VegaScrollFlowLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3DEB1555BF9C499678CE6A87B5D7DEF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CA73DDC5EE713CE9B521DF3F59D741C /* Pods-School-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		529E41D6A6AE2920D82B288DCF4C7C90 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FC07A8B76AE47E5E7D1812FA34CB192 /* VegaScrollFlowLayout-dummy.m in Sources */,
-				E7DFFEDF24E412019A273872D9289FC4 /* VegaScrollFlowLayout.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		581CE9D951AAA8FB7F28C3A79155D773 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F70552DD5E7BD35C64679415EAF4B90 /* Pods-SchoolTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B6EAFE1D2AA248DEC39E2B87CB5EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9120B0E7C51D9D053D7B303B39A4C0C /* Pods-School-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,25 +505,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF8EB1E70701DE3E033455D9DC85F0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5830F2ACA150C7192CA4813B05DC3A9 /* VegaScrollFlowLayout-dummy.m in Sources */,
+				EDB824A1FB0F9E5CC466D1DAE8B76F7F /* VegaScrollFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF039474E0CE92F847B75ECEB2FBF308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44D0301D829968CE815165EB7131568 /* GravitySliderFlowLayout-dummy.m in Sources */,
+				CBE90B0FAB0A5C23E167F987FDFF50F5 /* GravitySliderFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		388A21BF4DB169C7F326FB996949B242 /* PBXTargetDependency */ = {
+		18B59B081483FDF1529D958B6664D93F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VegaScrollFlowLayout;
-			target = 1CB4CEBC7D57DB269FC0EC9ADA56ED3D /* VegaScrollFlowLayout */;
-			targetProxy = 90D11EEBEB3E56C13488F355DED1F007 /* PBXContainerItemProxy */;
+			target = AA7853F22D52F26AC77AA718C67980FB /* VegaScrollFlowLayout */;
+			targetProxy = E158A1BFA48728540FECE7268A6859C6 /* PBXContainerItemProxy */;
+		};
+		93193211A510E34F9BC16B5090965542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GravitySliderFlowLayout;
+			target = 9AF8200FA5292CC73BF0273583A983EE /* GravitySliderFlowLayout */;
+			targetProxy = 810C0E8CECC303749AA1B3EFCD34D416 /* PBXContainerItemProxy */;
 		};
 		B1192196113A374F3C3E3FF1CB19F6B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-School";
-			target = 65D9C35CC2A6F2F7271409E047AAE53B /* Pods-School */;
+			target = FF31C49828EC43CFBA516A0415BE7D74 /* Pods-School */;
 			targetProxy = 1470D9830162CF266B3DEA55D1B03201 /* PBXContainerItemProxy */;
 		};
 		FA980915EDECB1B9F70F1043D08389A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-School";
-			target = 65D9C35CC2A6F2F7271409E047AAE53B /* Pods-School */;
+			target = FF31C49828EC43CFBA516A0415BE7D74 /* Pods-School */;
 			targetProxy = 5EF8F99D4723C6D21C220AD70E2A3758 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -515,42 +610,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		0D5047EC6D2AFEDDBC0BB48A5C8749B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61D808F2B08472C3E48FCF8A3CB8466 /* Pods-School.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-School/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-School/Pods-School.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		12903769F169B63BB1E3894248BD58AB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -621,39 +680,6 @@
 			};
 			name = Release;
 		};
-		237B00BB40DD8B15DC1657F4616CE42E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 702F93753DB115F1D5DDEC4C0328A410 /* VegaScrollFlowLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
-				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
-				PRODUCT_NAME = VegaScrollFlowLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2DF08DAA187474E8359E004125E7A2C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56E6B1B6184CCA74C6C3A7348C794375 /* Pods-SchoolUITests.debug.xcconfig */;
@@ -688,6 +714,38 @@
 			};
 			name = Debug;
 		};
+		30A97DFBA10DAB9A32435FF2D9664636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C0B3FB3DE5FA932B16CB6D544C604C /* GravitySliderFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GravitySliderFlowLayout/GravitySliderFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GravitySliderFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GravitySliderFlowLayout/GravitySliderFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = GravitySliderFlowLayout;
+				PRODUCT_NAME = GravitySliderFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		30DF0AED568388969BF4A982CF14B862 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36F93B86FF7D20E925846A118C4FBED4 /* Pods-SchoolTests.release.xcconfig */;
@@ -716,6 +774,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		752CD1B17D03D52F8BED6109BFAC24C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6679B8F3ACB6FA08FB6738927DB6384 /* VegaScrollFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -786,9 +877,45 @@
 			};
 			name = Debug;
 		};
-		D5C2222247E88C542826718A04708812 /* Debug */ = {
+		A435F76B0F4101D1D8F952ECFE990A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 702F93753DB115F1D5DDEC4C0328A410 /* VegaScrollFlowLayout.xcconfig */;
+			baseConfigurationReference = D61D808F2B08472C3E48FCF8A3CB8466 /* Pods-School.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-School/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-School/Pods-School.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5B411E751DC6CFF5EF72C784FEC0F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6679B8F3ACB6FA08FB6738927DB6384 /* VegaScrollFlowLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -818,7 +945,7 @@
 			};
 			name = Debug;
 		};
-		E83A4305A3D3D15D04CC7FEF87FDCC16 /* Release */ = {
+		A7B60AE6B798D24AE043A46A70C1BC59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22D71046BF371B6725C7C0B7EC851646 /* Pods-School.release.xcconfig */;
 			buildSettings = {
@@ -854,6 +981,39 @@
 			};
 			name = Release;
 		};
+		F25AFFAF3D59D9AA047337591A89F13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C0B3FB3DE5FA932B16CB6D544C604C /* GravitySliderFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GravitySliderFlowLayout/GravitySliderFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GravitySliderFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GravitySliderFlowLayout/GravitySliderFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = GravitySliderFlowLayout;
+				PRODUCT_NAME = GravitySliderFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -862,6 +1022,15 @@
 			buildConfigurations = (
 				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
 				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C4E317928D037CDC837A4802AA0887 /* Build configuration list for PBXNativeTarget "GravitySliderFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A97DFBA10DAB9A32435FF2D9664636 /* Debug */,
+				F25AFFAF3D59D9AA047337591A89F13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -875,15 +1044,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B23651DAD67F5A55C97C387D56D52686 /* Build configuration list for PBXNativeTarget "Pods-School" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D5047EC6D2AFEDDBC0BB48A5C8749B1 /* Debug */,
-				E83A4305A3D3D15D04CC7FEF87FDCC16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D06F8C2C2CED483AF80DC4C1EE9A6D89 /* Build configuration list for PBXNativeTarget "Pods-SchoolTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -893,11 +1053,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA39FD03937191616A50269AC771155E /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */ = {
+		D75746273715BBAA0BBFCFDC4F50C781 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5C2222247E88C542826718A04708812 /* Debug */,
-				237B00BB40DD8B15DC1657F4616CE42E /* Release */,
+				A5B411E751DC6CFF5EF72C784FEC0F56 /* Debug */,
+				752CD1B17D03D52F8BED6109BFAC24C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6CF4C700AA3B04BF8972FB3D5C668B /* Build configuration list for PBXNativeTarget "Pods-School" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A435F76B0F4101D1D8F952ECFE990A4B /* Debug */,
+				A7B60AE6B798D24AE043A46A70C1BC59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

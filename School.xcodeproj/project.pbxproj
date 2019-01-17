@@ -24,6 +24,13 @@
 		CFBE8C8421EFD4940059C661 /* Subject.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBE8C8321EFD4940059C661 /* Subject.xib */; };
 		CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */; };
 		CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C8721EFE3500059C661 /* UIViewExtensions.swift */; };
+		CFBE8C8C21F0AE720059C661 /* Email us with.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C8B21F0AE720059C661 /* Email us with.swift */; };
+		CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823D921F0CBB000ED5604 /* GenericCell.swift */; };
+		CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE823DA21F0CBB000ED5604 /* GenericCell.xib */; };
+		CFE823DE21F0D29D00ED5604 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823DD21F0D29D00ED5604 /* GenericModel.swift */; };
+		CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */; };
+		CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */; };
+		CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		CFBE8C8321EFD4940059C661 /* Subject.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Subject.xib; sourceTree = "<group>"; };
 		CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
 		CFBE8C8721EFE3500059C661 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CFBE8C8B21F0AE720059C661 /* Email us with.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Email us with.swift"; sourceTree = "<group>"; };
+		CFE823D921F0CBB000ED5604 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
+		CFE823DA21F0CBB000ED5604 /* GenericCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericCell.xib; sourceTree = "<group>"; };
+		CFE823DD21F0D29D00ED5604 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCell.swift; sourceTree = "<group>"; };
+		CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControllerCell.xib; sourceTree = "<group>"; };
+		CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		D9AC21C791AD02F8A8CE03CE /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Pods/Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 		E5807BF85BE0BCD8AAA49F1F /* Pods-SchoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolTests/Pods-SchoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +201,7 @@
 			children = (
 				CFBE8C7621EF66020059C661 /* Database.swift */,
 				CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */,
+				CFE823DD21F0D29D00ED5604 /* GenericModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,10 +209,12 @@
 		CFBE8C7021EF60120059C661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFE823E421F0EFA300ED5604 /* Subject cell */,
+				CFE823E321F0EF9200ED5604 /* Generic cell */,
 				CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */,
 				CFBE8C7321EF62140059C661 /* ProfileImageView.swift */,
-				CFBE8C8121EFD46B0059C661 /* SubjectCollectionViewCell.swift */,
-				CFBE8C8321EFD4940059C661 /* Subject.xib */,
+				CFBE8C8B21F0AE720059C661 /* Email us with.swift */,
+				CFE823E921F0EFF400ED5604 /* Controller Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,8 +239,36 @@
 			isa = PBXGroup;
 			children = (
 				CFBE8C8721EFE3500059C661 /* UIViewExtensions.swift */,
+				CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFE823E321F0EF9200ED5604 /* Generic cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFE823D921F0CBB000ED5604 /* GenericCell.swift */,
+				CFE823DA21F0CBB000ED5604 /* GenericCell.xib */,
+			);
+			path = "Generic cell";
+			sourceTree = "<group>";
+		};
+		CFE823E421F0EFA300ED5604 /* Subject cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFBE8C8121EFD46B0059C661 /* SubjectCollectionViewCell.swift */,
+				CFBE8C8321EFD4940059C661 /* Subject.xib */,
+			);
+			path = "Subject cell";
+			sourceTree = "<group>";
+		};
+		CFE823E921F0EFF400ED5604 /* Controller Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */,
+				CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */,
+			);
+			path = "Controller Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +382,9 @@
 				CFBE8C8421EFD4940059C661 /* Subject.xib in Resources */,
 				CF3D72C121EF44A50056CA88 /* LaunchScreen.storyboard in Resources */,
 				CF3D72BE21EF44A50056CA88 /* Assets.xcassets in Resources */,
+				CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */,
 				CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */,
+				CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +448,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-School/Pods-School-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GravitySliderFlowLayout/GravitySliderFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GravitySliderFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,8 +488,13 @@
 			files = (
 				CFBE8C7421EF62140059C661 /* ProfileImageView.swift in Sources */,
 				CF3D72B921EF44A20056CA88 /* HomeViewController.swift in Sources */,
+				CFE823DE21F0D29D00ED5604 /* GenericModel.swift in Sources */,
+				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
+				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
+				CFBE8C8C21F0AE720059C661 /* Email us with.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
+				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
 				CFBE8C7721EF66020059C661 /* Database.swift in Sources */,
 				CFBE8C8221EFD46B0059C661 /* SubjectCollectionViewCell.swift in Sources */,
 				CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */,

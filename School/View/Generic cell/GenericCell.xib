@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GenericCell" id="gTV-IL-0wX" customClass="GenericCell" customModule="School" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXW-Az-tZR">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlJ-By-m32">
+                                <rect key="frame" x="37" y="10" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OvalO" translatesAutoresizingMaskIntoConstraints="NO" id="Amw-JW-9Ft">
+                                <rect key="frame" x="17" y="17" width="8" height="9"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The term voltage has been used to describe both the rating of a battery and the reading on " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-c9-BD0">
+                                <rect key="frame" x="17" y="38" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.30456674098968506" green="0.32707393169403076" blue="0.40786230564117432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rome 123 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHv-Si-xKF">
+                                <rect key="frame" x="271" y="14" width="61" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647720575332642" green="0.9764588475227356" blue="0.97647124528884888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hfn-c9-BD0" secondAttribute="trailing" constant="34" id="1dg-fR-6al"/>
+                            <constraint firstItem="TlJ-By-m32" firstAttribute="leading" secondItem="Amw-JW-9Ft" secondAttribute="trailing" constant="12" id="BDD-ZE-o7o"/>
+                            <constraint firstItem="Amw-JW-9Ft" firstAttribute="leading" secondItem="IXW-Az-tZR" secondAttribute="leading" constant="17" id="I13-pg-mIg"/>
+                            <constraint firstItem="hfn-c9-BD0" firstAttribute="top" secondItem="TlJ-By-m32" secondAttribute="bottom" constant="7" id="Lkw-GR-gH9"/>
+                            <constraint firstItem="hfn-c9-BD0" firstAttribute="bottom" secondItem="IXW-Az-tZR" secondAttribute="bottomMargin" id="Zh2-xH-zP1"/>
+                            <constraint firstItem="CHv-Si-xKF" firstAttribute="baseline" secondItem="TlJ-By-m32" secondAttribute="firstBaseline" id="aXf-ii-AuG"/>
+                            <constraint firstItem="Amw-JW-9Ft" firstAttribute="centerY" secondItem="CHv-Si-xKF" secondAttribute="centerY" id="fCb-ZI-nlS"/>
+                            <constraint firstItem="hfn-c9-BD0" firstAttribute="top" secondItem="Amw-JW-9Ft" secondAttribute="bottom" constant="12" id="hlm-zG-FBg"/>
+                            <constraint firstAttribute="trailing" secondItem="CHv-Si-xKF" secondAttribute="trailing" constant="11" id="tPL-kn-NnZ"/>
+                            <constraint firstItem="TlJ-By-m32" firstAttribute="top" secondItem="IXW-Az-tZR" secondAttribute="top" constant="10" id="uI3-wh-krp"/>
+                            <constraint firstItem="Amw-JW-9Ft" firstAttribute="leading" secondItem="hfn-c9-BD0" secondAttribute="leading" id="utW-T9-3FK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IXW-Az-tZR" secondAttribute="trailing" id="CHY-5T-vjP"/>
+                <constraint firstItem="IXW-Az-tZR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jiz-Ky-4Yv"/>
+                <constraint firstAttribute="bottom" secondItem="IXW-Az-tZR" secondAttribute="bottom" id="pxE-pZ-77y"/>
+                <constraint firstItem="IXW-Az-tZR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x5V-di-KzW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="393" height="98"/>
+            <connections>
+                <outlet property="Background" destination="IXW-Az-tZR" id="JnV-f2-JZX"/>
+                <outlet property="dot" destination="Amw-JW-9Ft" id="Spq-uY-AsU"/>
+                <outlet property="mainText" destination="hfn-c9-BD0" id="9IX-X5-Fc4"/>
+                <outlet property="topLeftLabel" destination="TlJ-By-m32" id="Z3R-5i-wqt"/>
+                <outlet property="topRightLabel" destination="CHv-Si-xKF" id="cAh-Tl-v1k"/>
+            </connections>
+            <point key="canvasLocation" x="429.60000000000002" y="97.151424287856074"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="OvalO" width="8" height="8"/>
+    </resources>
+</document>

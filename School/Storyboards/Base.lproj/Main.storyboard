@@ -18,69 +18,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQ4-zb-rCV">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ4-zb-rCV">
                                 <rect key="frame" x="0.0" y="35" width="375" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MONDAY, JUNE 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVG-lp-Rqq">
-                                        <rect key="frame" x="20" y="2" width="102" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONDAY, JUNE 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVG-lp-Rqq">
+                                        <rect key="frame" x="20" y="13" width="102" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Tnr-Wx-hhI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                         <color key="textColor" red="0.55720710754394531" green="0.55633765459060669" blue="0.57647591829299927" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-1o-MYk">
-                                        <rect key="frame" x="20" y="22" width="96" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-rC-xI3" customClass="PageIndicator" customModule="School" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="78" width="335" height="7"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-1o-MYk">
+                                        <rect key="frame" x="20" y="30" width="96" height="40"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1I-xX-6r5">
-                                        <rect key="frame" x="116" y="36" width="76" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-yC-f2C">
+                                        <rect key="frame" x="124" y="46" width="76" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <color key="textColor" red="0.91765314340591431" green="0.91763597726821899" blue="0.91764765977859497" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-rC-xI3" customClass="PageIndicator" customModule="School" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="78" width="335" height="7"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hf3-pR-9M1" customClass="ProfileImageView" customModule="School" customModuleProvider="target">
-                                        <rect key="frame" x="314" y="22" width="41" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hf3-pR-9M1" customClass="ProfileImageView" customModule="School" customModuleProvider="target">
+                                        <rect key="frame" x="314" y="23" width="41" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="41" id="gU4-dT-nPl"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hf3-pR-9M1" firstAttribute="top" secondItem="qQ4-zb-rCV" secondAttribute="top" constant="23" id="BnE-Kg-7bO"/>
+                                    <constraint firstItem="4t4-1o-MYk" firstAttribute="top" secondItem="OVG-lp-Rqq" secondAttribute="bottom" constant="1" id="EAY-DW-KF4"/>
+                                    <constraint firstItem="iWm-yC-f2C" firstAttribute="top" secondItem="qQ4-zb-rCV" secondAttribute="top" constant="46" id="F49-Z5-kxA"/>
+                                    <constraint firstItem="4t4-1o-MYk" firstAttribute="bottom" secondItem="iWm-yC-f2C" secondAttribute="bottom" id="HXQ-oR-AqZ"/>
+                                    <constraint firstItem="Iwm-rC-xI3" firstAttribute="top" secondItem="4t4-1o-MYk" secondAttribute="bottom" constant="8" id="I18-aa-R0R"/>
+                                    <constraint firstItem="Iwm-rC-xI3" firstAttribute="top" secondItem="hf3-pR-9M1" secondAttribute="bottom" constant="15" id="JY1-IE-heh"/>
+                                    <constraint firstItem="iWm-yC-f2C" firstAttribute="centerX" secondItem="qQ4-zb-rCV" secondAttribute="centerX" constant="-25.5" id="KcB-ms-kSY"/>
+                                    <constraint firstItem="OVG-lp-Rqq" firstAttribute="leading" secondItem="Iwm-rC-xI3" secondAttribute="leading" id="UMZ-op-yax"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iwm-rC-xI3" secondAttribute="bottom" constant="1" id="cng-7Z-hba"/>
+                                    <constraint firstItem="hf3-pR-9M1" firstAttribute="trailing" secondItem="Iwm-rC-xI3" secondAttribute="trailing" id="eVl-hT-Ec2"/>
+                                    <constraint firstItem="OVG-lp-Rqq" firstAttribute="top" secondItem="qQ4-zb-rCV" secondAttribute="top" constant="13" id="fPN-c5-6vl"/>
+                                    <constraint firstItem="iWm-yC-f2C" firstAttribute="centerX" secondItem="Iwm-rC-xI3" secondAttribute="centerX" constant="-25.5" id="ha6-q5-7bo"/>
+                                    <constraint firstItem="OVG-lp-Rqq" firstAttribute="centerX" secondItem="4t4-1o-MYk" secondAttribute="centerX" constant="3" id="shf-Kg-iNC"/>
+                                    <constraint firstItem="hf3-pR-9M1" firstAttribute="leading" secondItem="iWm-yC-f2C" secondAttribute="trailing" constant="114" id="vXr-S6-GTo"/>
+                                    <constraint firstItem="hf3-pR-9M1" firstAttribute="centerY" secondItem="qQ4-zb-rCV" secondAttribute="centerY" id="vid-hL-n3Y"/>
+                                </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xxl-OP-LmS">
-                                <rect key="frame" x="0.0" y="129" width="375" height="683"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-Uw-Xva">
+                                <rect key="frame" x="0.0" y="124" width="375" height="683"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="31" minimumInteritemSpacing="0.0" id="jNl-pd-6XP">
-                                    <size key="itemSize" width="335" height="282"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="22" minimumInteritemSpacing="0.0" id="KlT-jN-dGY">
+                                    <size key="itemSize" width="366" height="643"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pjW-xD-3Dl">
-                                        <rect key="frame" x="20" y="0.0" width="335" height="282"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Z5F-HY-mji">
+                                        <rect key="frame" x="0.0" y="20" width="366" height="643"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="282"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="643"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="A50-GO-jC6">
+                                <rect key="frame" x="7" y="129" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qQ4-zb-rCV" firstAttribute="leading" secondItem="HoI-Uw-Xva" secondAttribute="leading" id="3Yh-ct-JVS"/>
+                            <constraint firstAttribute="trailing" secondItem="qQ4-zb-rCV" secondAttribute="trailing" id="7rH-4Y-42D"/>
+                            <constraint firstItem="qQ4-zb-rCV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PPI-NW-roh"/>
+                            <constraint firstItem="qQ4-zb-rCV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-9" id="PpL-f4-69o"/>
+                            <constraint firstAttribute="bottom" secondItem="qQ4-zb-rCV" secondAttribute="bottom" constant="691" id="U5A-6x-TjX"/>
+                            <constraint firstItem="HoI-Uw-Xva" firstAttribute="top" secondItem="qQ4-zb-rCV" secondAttribute="bottom" constant="3" id="hlw-eQ-H1V"/>
+                            <constraint firstItem="qQ4-zb-rCV" firstAttribute="trailing" secondItem="HoI-Uw-Xva" secondAttribute="trailing" id="u09-qL-7LS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HoI-Uw-Xva" secondAttribute="bottom" constant="-29" id="zGD-yb-Wwj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="contentCollectionView" destination="Xxl-OP-LmS" id="BvT-cT-rik"/>
+                        <outlet property="contentCollectionView" destination="HoI-Uw-Xva" id="7O3-Zu-oBY"/>
                         <outlet property="dayLabel" destination="OVG-lp-Rqq" id="L8Y-Hd-5K2"/>
                         <outlet property="pageIndicator" destination="Iwm-rC-xI3" id="Hti-BN-gT1"/>
                         <outlet property="profileView" destination="hf3-pR-9M1" id="oMh-W8-wYh"/>

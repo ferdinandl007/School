@@ -1,16 +1,20 @@
 PODS:
+  - GravitySliderFlowLayout (1.0)
   - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
+  - GravitySliderFlowLayout
   - VegaScrollFlowLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - GravitySliderFlowLayout
     - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
+  GravitySliderFlowLayout: bb9ae6a302b85821c9e0271c00533fae8091143b
   VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: cfdf35863f912d4b87897eebe5490b8606e9977d
+PODFILE CHECKSUM: 55c6458d436a91199258e5ab5e44e65bf63fa564
 
 COCOAPODS: 1.5.3

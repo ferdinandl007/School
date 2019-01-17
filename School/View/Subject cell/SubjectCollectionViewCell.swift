@@ -32,10 +32,6 @@ class SubjectCollectionViewCell: UICollectionViewCell {
         self.layer.shadowOffset = CGSize(width: 0, height: 13)
         self.layer.shadowOpacity = 0.14
         self.layer.shadowRadius = 4.0
-      
-
-        
-    
     }
     
     public func configure(with model: SubjectModel) {

@@ -13,14 +13,13 @@ class PageIndicator: UIControl {
   
   var gestureRecognizer = UIGestureRecognizer()
   
-  func setValue(_ newValue: Float, animated: Bool = false) {
-    value = min(maximumValue, max(minimumValue, newValue))
+  func setValue(_ newValue: CGFloat, animated: Bool = false) {
+    value = min(maximumValue, max(minimumValue, Float(newValue)))
 
     let valueRange = maximumValue - minimumValue
     let finalValue = CGFloat(value - minimumValue) / CGFloat(valueRange)
 
-    
-    renderer.setPointerPosition(finalValue * 270, animated: animated)
+    renderer.setPointerPosition(finalValue * 235, animated: animated)
   }
   
   var isContinuous = true
@@ -158,10 +157,10 @@ private class PageIndicatorRenderer {
   
   func setPointerPosition(_ newPointerPosition: CGFloat, animated: Bool = false) {
    var new = newPointerPosition
-    if !(new   > trackLayer.bounds.minX) {
+    if !(new  >= trackLayer.bounds.minX) {
       new = 0.0
     }
-    if !(new + pointerLength < trackLayer.bounds.maxX) {
+    if !(new + pointerLength <= trackLayer.bounds.maxX) {
       new = trackLayer.bounds.maxX - pointerLength
     }
     CATransaction.begin()
