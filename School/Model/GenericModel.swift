@@ -8,6 +8,7 @@
 
 import Foundation
 struct GenericModel {
+    let ID: String
     let topLeftLabel: String
     let topRightLabel: String
     let mainText: String

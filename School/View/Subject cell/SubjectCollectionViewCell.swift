@@ -37,7 +37,7 @@ class SubjectCollectionViewCell: UICollectionViewCell {
     public func configure(with model: SubjectModel) {
 
         image.image = model.image
-        subjectLabel.text = model.subject
+        subjectLabel.text = model.subjectName
         infoLabel.text = model.info
     }
     

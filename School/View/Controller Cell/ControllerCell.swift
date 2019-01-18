@@ -111,18 +111,19 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
         
     }
     
-    
-    
-    
-    
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if category == 0 {
-            return CGSize(width: 335, height: 282)
+            return CGSize(width: collectionView.bounds.width - 30, height: 282)
         } else {
-            return CGSize(width: 335, height: 80)
+            return CGSize(width: collectionView.bounds.width - 30, height: 80)
         }
-        
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if category == 1 {
+            print(database.getGrupes()[indexPath.row].topRightLabel)
+            let vc = self.storyboard!.instantiateWithIdentifier("SubjectViewController")
+            self.present(vc, animate: true, completion: nil)
+        }
     }
 }
 

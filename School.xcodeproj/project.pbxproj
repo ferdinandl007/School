@@ -31,6 +31,11 @@
 		CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */; };
 		CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */; };
 		CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */; };
+		CFE823FE21F134CA00ED5604 /* StoryboardSubjectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE823FD21F134CA00ED5604 /* StoryboardSubjectView.storyboard */; };
+		CFE8240021F2036900ED5604 /* groupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823FF21F2036900ED5604 /* groupModel.swift */; };
+		CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240121F2065900ED5604 /* DocumentsModel.swift */; };
+		CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240321F20E3100ED5604 /* SubjectViewController.swift */; };
+		CFE8240721F214BF00ED5604 /* CellDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,11 @@
 		CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCell.swift; sourceTree = "<group>"; };
 		CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControllerCell.xib; sourceTree = "<group>"; };
 		CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		CFE823FD21F134CA00ED5604 /* StoryboardSubjectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardSubjectView.storyboard; sourceTree = "<group>"; };
+		CFE823FF21F2036900ED5604 /* groupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupModel.swift; sourceTree = "<group>"; };
+		CFE8240121F2065900ED5604 /* DocumentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsModel.swift; sourceTree = "<group>"; };
+		CFE8240321F20E3100ED5604 /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegateProtocol.swift; sourceTree = "<group>"; };
 		D9AC21C791AD02F8A8CE03CE /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Pods/Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 		E5807BF85BE0BCD8AAA49F1F /* Pods-SchoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolTests/Pods-SchoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +175,7 @@
 		CF3D72B521EF44A20056CA88 /* School */ = {
 			isa = PBXGroup;
 			children = (
+				CFE8240521F2149A00ED5604 /* Protocols */,
 				CFBE8C7521EF63ED0059C661 /* Extensions */,
 				CFBE8C6F21EF60060059C661 /* Model */,
 				CFBE8C7021EF60120059C661 /* View */,
@@ -200,8 +211,10 @@
 			isa = PBXGroup;
 			children = (
 				CFBE8C7621EF66020059C661 /* Database.swift */,
+				CFE823FF21F2036900ED5604 /* groupModel.swift */,
 				CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */,
 				CFE823DD21F0D29D00ED5604 /* GenericModel.swift */,
+				CFE8240121F2065900ED5604 /* DocumentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3D72B821EF44A20056CA88 /* HomeViewController.swift */,
+				CFE8240321F20E3100ED5604 /* SubjectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3D72BA21EF44A20056CA88 /* Main.storyboard */,
+				CFE823FD21F134CA00ED5604 /* StoryboardSubjectView.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -269,6 +284,14 @@
 				CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */,
 			);
 			path = "Controller Cell";
+			sourceTree = "<group>";
+		};
+		CFE8240521F2149A00ED5604 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +407,7 @@
 				CF3D72BE21EF44A50056CA88 /* Assets.xcassets in Resources */,
 				CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */,
 				CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */,
+				CFE823FE21F134CA00ED5604 /* StoryboardSubjectView.storyboard in Resources */,
 				CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,12 +510,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE8240721F214BF00ED5604 /* CellDelegateProtocol.swift in Sources */,
 				CFBE8C7421EF62140059C661 /* ProfileImageView.swift in Sources */,
 				CF3D72B921EF44A20056CA88 /* HomeViewController.swift in Sources */,
 				CFE823DE21F0D29D00ED5604 /* GenericModel.swift in Sources */,
 				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
 				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
+				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
+				CFE8240021F2036900ED5604 /* groupModel.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
+				CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */,
 				CFBE8C8C21F0AE720059C661 /* Email us with.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
 				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
