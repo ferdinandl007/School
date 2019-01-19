@@ -32,9 +32,7 @@ class HomeViewController: UIViewController {
     
     var itemWidth = CGFloat(0)
     var currentItem = 0
-    
-    
-    weak var delegate: VisageDelegate?
+
 
     
     override func viewDidLoad() {
@@ -43,7 +41,7 @@ class HomeViewController: UIViewController {
         setUpBar()
         dayLabel.text  = getDay()
         // Do collection View stuff
-      setUpCollectionView()
+        setUpCollectionView()
 
 
     
@@ -147,6 +145,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ControllerCell", for: indexPath) as! ControllerCell
             cell.configure(with: indexPath.item)
+            cell.delegate = self
             return cell
 
     }
@@ -193,5 +192,37 @@ extension HomeViewController: UIScrollViewDelegate {
     }
 
 }
+
+
+extension HomeViewController: CellDelegate {
+    func colCategorySelected(with indexPath: IndexPath, and Category: Int) {
+        print("yes ", Category)
+        
+        switch Category {
+        case 0:
+            
+            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "SubjectViewController") as! SubjectViewController
+            
+            homeView.data = database.getToDayssubjects()[indexPath.row]
+            present(homeView, animated: true, completion: nil)
+            
+            
+            break
+        case 1:
+            break
+        case 2:
+            break
+        default:
+            break
+        }
+        
+    }
+    
+   
+    
+   
+}
+
+
 
 

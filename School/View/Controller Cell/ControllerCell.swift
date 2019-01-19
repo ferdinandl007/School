@@ -15,6 +15,8 @@ class ControllerCell: UICollectionViewCell {
     var database = Database()
     var category = 0
     
+    var delegate: CellDelegate?
+    
     let layout = VegaScrollFlowLayout()
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -119,11 +121,8 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if category == 1 {
-            print(database.getGrupes()[indexPath.row].topRightLabel)
-            let vc = self.storyboard!.instantiateWithIdentifier("SubjectViewController")
-            self.present(vc, animate: true, completion: nil)
-        }
+        
+            delegate?.colCategorySelected(with: indexPath, and: category)
     }
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CellDelegate {
-    func colCategorySelected(with indexPath : IndexPath)
+    func colCategorySelected(with indexPath : IndexPath,and Category: Int)
 }
 
 
