@@ -97,7 +97,6 @@ extension SubjectViewController: UICollectionViewDelegate, UICollectionViewDataS
         collectionView.performBatchUpdates(nil, completion: nil)
         if collectionView == OptionsCollectionView {
            guard let _ =  collectionView.cellForItem(at: indexPath) as? SquareButtonCell else { return }
-            
             //cell.background.layer.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         }
     }

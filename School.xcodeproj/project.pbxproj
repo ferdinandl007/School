@@ -33,7 +33,7 @@
 		CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */; };
 		CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */; };
 		CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */; };
-		CFE8240021F2036900ED5604 /* groupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823FF21F2036900ED5604 /* groupModel.swift */; };
+		CFE8240021F2036900ED5604 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE823FF21F2036900ED5604 /* GroupModel.swift */; };
 		CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240121F2065900ED5604 /* DocumentsModel.swift */; };
 		CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240321F20E3100ED5604 /* SubjectViewController.swift */; };
 		CFE8240721F214BF00ED5604 /* CellDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */; };
@@ -104,7 +104,7 @@
 		CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerCell.swift; sourceTree = "<group>"; };
 		CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControllerCell.xib; sourceTree = "<group>"; };
 		CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
-		CFE823FF21F2036900ED5604 /* groupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupModel.swift; sourceTree = "<group>"; };
+		CFE823FF21F2036900ED5604 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		CFE8240121F2065900ED5604 /* DocumentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsModel.swift; sourceTree = "<group>"; };
 		CFE8240321F20E3100ED5604 /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegateProtocol.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBE8C7621EF66020059C661 /* Database.swift */,
-				CFE823FF21F2036900ED5604 /* groupModel.swift */,
+				CFE823FF21F2036900ED5604 /* GroupModel.swift */,
 				CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */,
 				CFE823DD21F0D29D00ED5604 /* GenericModel.swift */,
 				CFE8240121F2065900ED5604 /* DocumentsModel.swift */,
@@ -593,7 +593,7 @@
 				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
 				CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */,
 				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
-				CFE8240021F2036900ED5604 /* groupModel.swift in Sources */,
+				CFE8240021F2036900ED5604 /* GroupModel.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
 				CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,

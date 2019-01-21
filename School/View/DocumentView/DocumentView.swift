@@ -16,10 +16,10 @@ class DocumentView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    let kCONTENT_XIB_NAME = "DocView"
-    var data = DocumentsModel(Document: [])
-    var delegate: DocDelegate?
-    let quickLookController = QLPreviewController()
+    private let kCONTENT_XIB_NAME = "DocView"
+    public var delegate: DocDelegate?
+    private let quickLookController = QLPreviewController()
+    public var data = DocumentsModel(Document: [])
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,9 +31,15 @@ class DocumentView: UIView {
         commonInit()
     }
     
-    func commonInit() {
+    private func commonInit() {
         Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
+    }
+    
+    public func configure(with model: DocumentsModel, labelText: String) {
+        label.text = labelText
+        data = model
+        collectionView.reloadData()
     }
     
     
@@ -54,9 +60,10 @@ class DocumentView: UIView {
         
         quickLookController.dataSource = self
         
+        
     }
     
-    func reload(){
+    private func reload(){
         self.collectionView.performBatchUpdates({
             let indexSet = IndexSet(integersIn: 0...0)
             self.collectionView.reloadSections(indexSet)
@@ -64,7 +71,7 @@ class DocumentView: UIView {
     }
     
     
-    func registerCell() {
+    private func registerCell() {
         collectionView.register(UINib.init(nibName: "DocCell", bundle: nil), forCellWithReuseIdentifier: "DocCell")
     }
     
@@ -85,6 +92,11 @@ class DocumentView: UIView {
   
 }
 
+
+
+
+
+
 extension DocumentView: UIDocumentPickerDelegate, UINavigationControllerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         
@@ -98,17 +110,16 @@ extension DocumentView: UIDocumentPickerDelegate, UINavigationControllerDelegate
         controller.dismiss(animated: true, completion: nil)
         
     }
-    
-    
-    
-    
 }
 
 
 
+
+
+
+
+
 extension DocumentView: ImageScannerControllerDelegate {
-    
-    
     
     func imageScannerController(_ scanner: ImageScannerController, didFinishScanningWithResults results: ImageScannerResults) {
         scanner.dismiss(animated: true)
@@ -128,8 +139,37 @@ extension DocumentView: ImageScannerControllerDelegate {
          print(error)
     }
     
+    private func scnImage(){
+        let scannerViewController = ImageScannerController()
+        scannerViewController.imageScannerDelegate = self
+        
+        delegate?.docPresent(UIViewController: scannerViewController)
+    }
+    
+    private func presentOptions(){
+        let actionSheet = UIAlertController(title: "Would you like to scan an image or select one from your photo library?", message: nil, preferredStyle: .actionSheet)
+        
+        let scanAction = UIAlertAction(title: "Scan", style: .default) { (_) in
+            self.scnImage()
+        }
+        
+        let selectAction = UIAlertAction(title: "Select", style: .default) { (_) in
+            self.attachDocument()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        actionSheet.addAction(scanAction)
+        actionSheet.addAction(selectAction)
+        actionSheet.addAction(cancelAction)
+        
+        delegate?.docPresent(UIViewController: actionSheet)
+    }
     
 }
+
+
+
 
 
 extension DocumentView: QLPreviewControllerDataSource {
@@ -142,7 +182,6 @@ extension DocumentView: QLPreviewControllerDataSource {
         return data.Document[index] as NSURL
     }
     
-    
 }
 
 
@@ -150,36 +189,9 @@ extension DocumentView: QLPreviewControllerDataSource {
 
 
 
+
+
 extension DocumentView: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
-    func scnImage(){
-        let scannerViewController = ImageScannerController()
-        scannerViewController.imageScannerDelegate = self
-        
-       delegate?.docPresent(UIViewController: scannerViewController)
-    }
-    
-    func presentOptions(){
-        let actionSheet = UIAlertController(title: "Would you like to scan an image or select one from your photo library?", message: nil, preferredStyle: .actionSheet)
-        
-        let scanAction = UIAlertAction(title: "Scan", style: .default) { (_) in
-           self.scnImage()
-        }
-        
-        let selectAction = UIAlertAction(title: "Select", style: .default) { (_) in
-           self.attachDocument()
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        actionSheet.addAction(scanAction)
-        actionSheet.addAction(selectAction)
-        actionSheet.addAction(cancelAction)
-        
-        delegate?.docPresent(UIViewController: actionSheet)
-    }
-    
-    
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -223,30 +235,5 @@ extension DocumentView: UICollectionViewDelegate, UICollectionViewDataSource,UIC
             }
             delegate?.peakContent(with: indexPath, content: data.Document[indexPath.row - 1])
         }
-    
-    }
-    
-    
-}
-
-
-
-
-
-
-
-
-
-
-extension UIView
-{
-    func fixInView(_ container: UIView!) -> Void{
-        self.translatesAutoresizingMaskIntoConstraints = false;
-        self.frame = container.frame;
-        container.addSubview(self);
-        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
     }
 }

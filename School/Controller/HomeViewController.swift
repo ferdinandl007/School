@@ -207,7 +207,8 @@ extension HomeViewController: CellDelegate {
             break
         case 1:
             let homeView = self.storyboard?.instantiateViewController(withIdentifier: "GroupViewController") as! GroupViewController
-            
+            homeView.groupID = database.getGrupes()[indexPath.row].ID
+            homeView.groupName = database.getGrupes()[indexPath.row].topLeftLabel
 //            homeView.data = database.getToDayssubjects()[indexPath.row]
             present(homeView, animated: true, completion: nil)
             

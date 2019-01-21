@@ -18,6 +18,23 @@ class Database {
     }
     
     
+    func getUpdates(with id: String) -> GroupModel {
+        var updates =  [GenericModel]()
+        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "ddd")!
+        let docs = DocumentsModel(Document: [path1])
+        
+        
+        
+        for i in 0...8 {
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Queen Elizabeth’s husband Prince Philip, 97, was driving himself in a Range Rover when he was involved in a traffic accident Thursday, Buckingham Palace told CNN.  He saw a doctor at the Queen’s Sandringham Estate. The doctor gave Philip, the Duke of Edinburgh, the all-clear."))
+        }
+        
+        let group = GroupModel(messagingID: id, groupName: "group xx", groupUpdates: updates, documents: docs)
+        return group
+        
+    }
+    
+    
     func getToDayssubjects() -> [SubjectModel] {
         var data =  [SubjectModel]()
         var updates =  [GenericModel]()
