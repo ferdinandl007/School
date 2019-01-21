@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import WeScan
 class GroupViewController: UIViewController {
 
+    @IBOutlet weak var docView: DocumentView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        docView.delegate = self
     }
     
 
@@ -32,3 +34,19 @@ class GroupViewController: UIViewController {
     */
 
 }
+extension GroupViewController: DocDelegate {
+    func peakContent(with IndexPath: IndexPath, content: URL) {
+        
+    }
+    
+    
+    func docPresent(UIViewController: UIViewController) {
+         present(UIViewController, animated: true)
+    }
+    
+}
+
+
+
+
+

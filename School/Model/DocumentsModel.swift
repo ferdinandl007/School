@@ -9,5 +9,5 @@
 import Foundation
 
 struct DocumentsModel {
-    let Document: Any
+    var Document: [URL]
 }

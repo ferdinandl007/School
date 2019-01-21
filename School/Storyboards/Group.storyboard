@@ -42,6 +42,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uUX-IO-Raq"/>
                     </view>
+                    <connections>
+                        <outlet property="docView" destination="H46-Db-E1w" id="QrH-Uh-u5Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgz-QO-kK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

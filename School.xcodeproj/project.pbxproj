@@ -10,6 +10,9 @@
 		0F0174F401A38EAEDCC118CA /* Pods_SchoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18084F677B385D0B41C897D1 /* Pods_SchoolTests.framework */; };
 		5D51FCF60892456BAE2E1A1B /* Pods_SchoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0B5282111C62B66E82C4B0 /* Pods_SchoolUITests.framework */; };
 		69AB7AF352A475BE4E8300B2 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092FB2EC49BC4B00B69084DF /* Pods_School.framework */; };
+		CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */; };
+		CF3B7D6621F63B4A00459BE0 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */; };
+		CF3B7D6821F646DE00459BE0 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6721F646DE00459BE0 /* URLExtension.swift */; };
 		CF3D72B721EF44A20056CA88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72B621EF44A20056CA88 /* AppDelegate.swift */; };
 		CF3D72B921EF44A20056CA88 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72B821EF44A20056CA88 /* HomeViewController.swift */; };
 		CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3D72BA21EF44A20056CA88 /* Main.storyboard */; };
@@ -71,6 +74,10 @@
 		6F0B5282111C62B66E82C4B0 /* Pods_SchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A336BE44F0F5AD87EE13B949 /* Pods-SchoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolTests/Pods-SchoolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8C1A211193CAAD75D10B022 /* Pods-SchoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolUITests/Pods-SchoolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocDelegate.swift; sourceTree = "<group>"; };
+		CF3B7D6221F6286100459BE0 /* School.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = School.entitlements; sourceTree = "<group>"; };
+		CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		CF3B7D6721F646DE00459BE0 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		CF3D72B321EF44A20056CA88 /* School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D72B621EF44A20056CA88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3D72B821EF44A20056CA88 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +198,7 @@
 		CF3D72B521EF44A20056CA88 /* School */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B7D6221F6286100459BE0 /* School.entitlements */,
 				CFE8240521F2149A00ED5604 /* Protocols */,
 				CFBE8C7521EF63ED0059C661 /* Extensions */,
 				CFBE8C6F21EF60060059C661 /* Model */,
@@ -275,6 +283,8 @@
 			children = (
 				CFBE8C8721EFE3500059C661 /* UIViewExtensions.swift */,
 				CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */,
+				CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */,
+				CF3B7D6721F646DE00459BE0 /* URLExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */,
+				CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -414,6 +425,14 @@
 				TargetAttributes = {
 					CF3D72B221EF44A20056CA88 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					CF3D72C621EF44A50056CA88 = {
 						CreatedOnToolsVersion = 10.1;
@@ -572,6 +591,7 @@
 				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
 				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
 				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
+				CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */,
 				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
 				CFE8240021F2036900ED5604 /* groupModel.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
@@ -583,7 +603,9 @@
 				CFBE8C7721EF66020059C661 /* Database.swift in Sources */,
 				CFBE8C8221EFD46B0059C661 /* SubjectCollectionViewCell.swift in Sources */,
 				CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */,
+				CF3B7D6821F646DE00459BE0 /* URLExtension.swift in Sources */,
 				CF3D72B721EF44A20056CA88 /* AppDelegate.swift in Sources */,
+				CF3B7D6621F63B4A00459BE0 /* ImageExtension.swift in Sources */,
 				CFE8241D21F5F4A200ED5604 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,10 +782,14 @@
 			baseConfigurationReference = 462DC30984C2D939104034F4 /* Pods-School.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = School/School.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -776,10 +802,14 @@
 			baseConfigurationReference = D9AC21C791AD02F8A8CE03CE /* Pods-School.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = School/School.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -796,7 +826,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -814,7 +848,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -831,7 +869,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -848,7 +890,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
