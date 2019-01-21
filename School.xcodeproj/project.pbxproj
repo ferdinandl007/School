@@ -38,6 +38,12 @@
 		CFE8240C21F25AFC00ED5604 /* SquareButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240A21F25AFC00ED5604 /* SquareButtonCell.swift */; };
 		CFE8240D21F25AFC00ED5604 /* SquareButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE8240B21F25AFC00ED5604 /* SquareButtonCell.xib */; };
 		CFE8241021F25DA500ED5604 /* SquareButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8240F21F25DA500ED5604 /* SquareButtonModel.swift */; };
+		CFE8241221F5E5FD00ED5604 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8241121F5E5FD00ED5604 /* GroupViewController.swift */; };
+		CFE8241B21F5E7A400ED5604 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE8241A21F5E7A400ED5604 /* Group.storyboard */; };
+		CFE8241D21F5F4A200ED5604 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8241C21F5F4A200ED5604 /* DocumentView.swift */; };
+		CFE8242021F5F4F800ED5604 /* DocView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE8241F21F5F4F800ED5604 /* DocView.xib */; };
+		CFE8242321F604B800ED5604 /* DocCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8242121F604B800ED5604 /* DocCell.swift */; };
+		CFE8242421F604B800ED5604 /* DocCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE8242221F604B800ED5604 /* DocCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,12 @@
 		CFE8240A21F25AFC00ED5604 /* SquareButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButtonCell.swift; sourceTree = "<group>"; };
 		CFE8240B21F25AFC00ED5604 /* SquareButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquareButtonCell.xib; sourceTree = "<group>"; };
 		CFE8240F21F25DA500ED5604 /* SquareButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButtonModel.swift; sourceTree = "<group>"; };
+		CFE8241121F5E5FD00ED5604 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		CFE8241A21F5E7A400ED5604 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Group.storyboard; sourceTree = "<group>"; };
+		CFE8241C21F5F4A200ED5604 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
+		CFE8241F21F5F4F800ED5604 /* DocView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocView.xib; sourceTree = "<group>"; };
+		CFE8242121F604B800ED5604 /* DocCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCell.swift; sourceTree = "<group>"; };
+		CFE8242221F604B800ED5604 /* DocCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocCell.xib; sourceTree = "<group>"; };
 		D9AC21C791AD02F8A8CE03CE /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Pods/Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 		E5807BF85BE0BCD8AAA49F1F /* Pods-SchoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolTests/Pods-SchoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,11 +239,13 @@
 		CFBE8C7021EF60120059C661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFE8240E21F25B0100ED5604 /* SquareButtonCell */,
 				CFE823E421F0EFA300ED5604 /* Subject cell */,
 				CFE823E321F0EF9200ED5604 /* Generic cell */,
 				CFE823E921F0EFF400ED5604 /* Controller Cell */,
 				CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */,
 				CFBE8C7321EF62140059C661 /* ProfileImageView.swift */,
+				CFE8241E21F5F4AB00ED5604 /* DocumentView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +255,7 @@
 			children = (
 				CF3D72B821EF44A20056CA88 /* HomeViewController.swift */,
 				CFE8240321F20E3100ED5604 /* SubjectViewController.swift */,
+				CFE8241121F5E5FD00ED5604 /* GroupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +263,7 @@
 		CFBE8C7221EF605F0059C661 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CFE8241A21F5E7A400ED5604 /* Group.storyboard */,
 				CFE8240821F2286F00ED5604 /*  subject.storyboard */,
 				CF3D72BA21EF44A20056CA88 /* Main.storyboard */,
 			);
@@ -286,7 +302,6 @@
 			children = (
 				CFE823E621F0EFEE00ED5604 /* ControllerCell.xib */,
 				CFE823E521F0EFEE00ED5604 /* ControllerCell.swift */,
-				CFE8240E21F25B0100ED5604 /* SquareButtonCell */,
 			);
 			path = "Controller Cell";
 			sourceTree = "<group>";
@@ -306,6 +321,25 @@
 				CFE8240B21F25AFC00ED5604 /* SquareButtonCell.xib */,
 			);
 			path = SquareButtonCell;
+			sourceTree = "<group>";
+		};
+		CFE8241E21F5F4AB00ED5604 /* DocumentView */ = {
+			isa = PBXGroup;
+			children = (
+				CFE8241C21F5F4A200ED5604 /* DocumentView.swift */,
+				CFE8241F21F5F4F800ED5604 /* DocView.xib */,
+				CFE8242521F604C300ED5604 /* Doc Cell */,
+			);
+			path = DocumentView;
+			sourceTree = "<group>";
+		};
+		CFE8242521F604C300ED5604 /* Doc Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFE8242121F604B800ED5604 /* DocCell.swift */,
+				CFE8242221F604B800ED5604 /* DocCell.xib */,
+			);
+			path = "Doc Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +456,10 @@
 				CF3D72BE21EF44A50056CA88 /* Assets.xcassets in Resources */,
 				CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */,
 				CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */,
+				CFE8241B21F5E7A400ED5604 /* Group.storyboard in Resources */,
+				CFE8242021F5F4F800ED5604 /* DocView.xib in Resources */,
 				CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */,
+				CFE8242421F604B800ED5604 /* DocCell.xib in Resources */,
 				CFE8240921F2286F00ED5604 /*  subject.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,11 +526,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-School/Pods-School-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GravitySliderFlowLayout/GravitySliderFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/WeScan/WeScan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GravitySliderFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeScan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,16 +572,19 @@
 				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
 				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
 				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
+				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
 				CFE8240021F2036900ED5604 /* groupModel.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
 				CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
 				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
+				CFE8241221F5E5FD00ED5604 /* GroupViewController.swift in Sources */,
 				CFE8240C21F25AFC00ED5604 /* SquareButtonCell.swift in Sources */,
 				CFBE8C7721EF66020059C661 /* Database.swift in Sources */,
 				CFBE8C8221EFD46B0059C661 /* SubjectCollectionViewCell.swift in Sources */,
 				CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */,
 				CF3D72B721EF44A20056CA88 /* AppDelegate.swift in Sources */,
+				CFE8241D21F5F4A200ED5604 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,10 +763,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -740,10 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -760,11 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -782,11 +814,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -803,11 +831,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -824,11 +848,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

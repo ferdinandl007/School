@@ -6,7 +6,7 @@ target 'School' do
   use_frameworks!
   pod 'VegaScrollFlowLayout'
   pod 'GravitySliderFlowLayout'
- # pod 'WeScan', '>= 0.9'
+  pod 'WeScan', '>= 0.9'
 
 
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DocCell" customModule="School" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="_Notebook1" translatesAutoresizingMaskIntoConstraints="NO" id="sWh-5T-2us">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="136"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="136" id="qFa-O6-mka"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K19-Fx-Fff">
+                        <rect key="frame" x="0.0" y="129" width="103" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0xX-6U-JIl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sWh-5T-2us" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7yc-aE-Hyr"/>
+                <constraint firstAttribute="trailing" secondItem="K19-Fx-Fff" secondAttribute="trailing" id="CSN-LR-lwv"/>
+                <constraint firstItem="K19-Fx-Fff" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MMM-qp-uTQ"/>
+                <constraint firstAttribute="bottom" secondItem="K19-Fx-Fff" secondAttribute="bottom" id="kFk-Ga-iXq"/>
+                <constraint firstAttribute="trailing" secondItem="sWh-5T-2us" secondAttribute="trailing" id="liL-Gk-nvC"/>
+                <constraint firstItem="sWh-5T-2us" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xCw-VL-KTi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="image" destination="sWh-5T-2us" id="fQa-D2-wBa"/>
+                <outlet property="label" destination="K19-Fx-Fff" id="MQs-7E-IKU"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="_Notebook1" width="116" height="150"/>
+    </resources>
+</document>

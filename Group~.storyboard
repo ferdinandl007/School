@@ -10,6 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Group View Controller-->
+        <scene sceneID="byT-8X-T4c">
+            <objects>
+                <viewController id="qb6-hQ-5zE" customClass="GroupViewController" customModule="School" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ch-bL-YjV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Ew-fL-Qi8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJh-Zv-m7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-922" y="-6"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -130,14 +145,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb0-BT-UDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957" y="31"/>
-        </scene>
-        <!--GroupViewController-->
-        <scene sceneID="woc-y3-OtS">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GroupViewController" storyboardName="Group" referencedIdentifier="GroupViewController" id="9Fv-zv-zfK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zZC-Ai-Ix5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1036" y="20"/>
         </scene>
     </scenes>
 </document>

@@ -185,7 +185,6 @@ extension HomeViewController: UIScrollViewDelegate {
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-         print(Int(scrollView.contentOffset.x))
         let delta = scrollView.contentOffset.x / (scrollView.frame.width * CGFloat(2))
         pageIndicator.setValue(delta, animated: true)
         
@@ -196,7 +195,6 @@ extension HomeViewController: UIScrollViewDelegate {
 
 extension HomeViewController: CellDelegate {
     func colCategorySelected(with indexPath: IndexPath, and Category: Int) {
-        print("yes ", Category)
         
         switch Category {
         case 0:
@@ -206,9 +204,13 @@ extension HomeViewController: CellDelegate {
             homeView.data = database.getToDayssubjects()[indexPath.row]
             present(homeView, animated: true, completion: nil)
             
-            
             break
         case 1:
+            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "GroupViewController") as! GroupViewController
+            
+//            homeView.data = database.getToDayssubjects()[indexPath.row]
+            present(homeView, animated: true, completion: nil)
+            
             break
         case 2:
             break
