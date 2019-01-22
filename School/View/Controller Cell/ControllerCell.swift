@@ -86,7 +86,7 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
         case 1:
             return database.getGrupes().count
         default:
-            return database.getGrupes().count
+            return database.getEvents().count
             
         }
         
@@ -106,7 +106,7 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GenericCell", for: indexPath) as! GenericCell
-            cell.configure(with: database.getGrupes()[indexPath.row], andWith: indexPath.row)
+            cell.configure(with: database.getEvents()[indexPath.row], andWith: indexPath.row)
            return cell
             
         }

@@ -98,6 +98,15 @@ extension SubjectViewController: UICollectionViewDelegate, UICollectionViewDataS
         if collectionView == OptionsCollectionView {
            guard let _ =  collectionView.cellForItem(at: indexPath) as? SquareButtonCell else { return }
             //cell.background.layer.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            if indexPath.row == 0 {
+                let homeWork = self.storyboard?.instantiateViewController(withIdentifier: "HomeworkViewController") as! HomeworkViewController
+                homeWork.id = subjectID
+                homeWork.name = data!.subjectName
+                present(homeWork, animated: true, completion: nil)
+            } else {
+                displayComingSoon(with: self)
+            }
+            
         }
     }
     

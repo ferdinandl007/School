@@ -9,9 +9,9 @@
 import Foundation
 
 
-struct groupModel {
+struct GroupModel {
     let messagingID: String
     let groupName: String
-    let groupUpdates: [GenericModel]
-    let documents: [DocumentsModel]
+    let groupUpdates: [GenericModel]?
+    let documents: DocumentsModel?
 }

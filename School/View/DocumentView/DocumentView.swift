@@ -16,10 +16,20 @@ class DocumentView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    private let kCONTENT_XIB_NAME = "DocView"
-    public var delegate: DocDelegate?
     private let quickLookController = QLPreviewController()
+    private let kCONTENT_XIB_NAME = "DocView"
+    
+    
+    
+    public var delegate: DocDelegate?
     public var data = DocumentsModel(Document: [])
+    public var isEdibl = true {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -202,9 +212,11 @@ extension DocumentView: UICollectionViewDelegate, UICollectionViewDataSource,UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DocCell", for: indexPath) as! DocCell
         
-       
-        if indexPath.row == 0 {
+        if indexPath.row == 0 && isEdibl {
             cell.configure(with: "Add Documents", andWith: indexPath.row)
+            return cell
+        } else if !isEdibl && indexPath.row == 0 {
+            cell.configure(with: "Teachers documents", andWith: indexPath.row + 2)
             return cell
         }
         
@@ -226,8 +238,13 @@ extension DocumentView: UICollectionViewDelegate, UICollectionViewDataSource,UIC
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         if indexPath.row == 0 {
-             presentOptions()
+
+            if isEdibl {
+                 presentOptions()
+            }
+           
         } else {
             if QLPreviewController.canPreview(data.Document[indexPath.row - 1] as NSURL) {
                 quickLookController.currentPreviewItemIndex = indexPath.row - 1

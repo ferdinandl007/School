@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
         dayLabel.text  = getDay()
         // Do collection View stuff
         setUpCollectionView()
+       
 
 
     
@@ -86,6 +87,13 @@ class HomeViewController: UIViewController {
         dateFormatter.dateFormat = "EEEE, MMM dd"
         return dateFormatter.string(from: date)
     }
+    
+    
+    @IBAction func goToProfile(_ sender: Any) {
+        print("efhsrjtmrtdfzsfc")
+    }
+    
+    
     
     func Updatetext(with Category: Int){
         var next = ""
@@ -214,6 +222,7 @@ extension HomeViewController: CellDelegate {
             
             break
         case 2:
+            displayComingSoon(with: self)
             break
         default:
             break

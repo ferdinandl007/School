@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileImageView: UIImageView {
+class ProfileImageView: UIButton {
 
    
     var showUser = true
@@ -36,10 +36,11 @@ class ProfileImageView: UIImageView {
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.cornerRadius = self.frame.size.width/2
         self.clipsToBounds = true
-        
+        self.isEnabled = true
 //      Check if we want to show you the photo
         if showUser {
-            self.image = database.getUserProfilePhoto()
+            self.setImage(database.getUserProfilePhoto(), for: .normal)
+            
         }
     }
 }

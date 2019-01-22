@@ -26,3 +26,22 @@ extension URL {
         return (filenameParts[0], filenameParts[1])
     }
 }
+
+
+extension String {
+    /**
+     Truncates the string to the specified length number of characters and appends an optional trailing string if longer.
+     
+     - Parameter length: A `String`.
+     - Parameter trailing: A `String` that will be appended after the truncation.
+     
+     - Returns: A `String` object.
+     */
+    func truncate(length: Int, trailing: String = "…") -> String {
+        if self.count > length {
+            return String(self.prefix(length)) + trailing
+        } else {
+            return self
+        }
+    }
+}

@@ -13,6 +13,11 @@
 		CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */; };
 		CF3B7D6621F63B4A00459BE0 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */; };
 		CF3B7D6821F646DE00459BE0 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6721F646DE00459BE0 /* URLExtension.swift */; };
+		CF3B7D6A21F728B900459BE0 /* Homework.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3B7D6921F728B900459BE0 /* Homework.storyboard */; };
+		CF3B7D6C21F7297800459BE0 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6B21F7297800459BE0 /* HomeworkViewController.swift */; };
+		CF3B7D6E21F73F0600459BE0 /* HomeworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6D21F73F0600459BE0 /* HomeworkModel.swift */; };
+		CF3B7D7021F7604D00459BE0 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6F21F7604D00459BE0 /* AlertController.swift */; };
+		CF3B7D7521F795C000459BE0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D7421F795C000459BE0 /* ProfileViewController.swift */; };
 		CF3D72B721EF44A20056CA88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72B621EF44A20056CA88 /* AppDelegate.swift */; };
 		CF3D72B921EF44A20056CA88 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72B821EF44A20056CA88 /* HomeViewController.swift */; };
 		CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3D72BA21EF44A20056CA88 /* Main.storyboard */; };
@@ -78,6 +83,12 @@
 		CF3B7D6221F6286100459BE0 /* School.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = School.entitlements; sourceTree = "<group>"; };
 		CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		CF3B7D6721F646DE00459BE0 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		CF3B7D6921F728B900459BE0 /* Homework.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homework.storyboard; sourceTree = "<group>"; };
+		CF3B7D6B21F7297800459BE0 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		CF3B7D6D21F73F0600459BE0 /* HomeworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkModel.swift; sourceTree = "<group>"; };
+		CF3B7D6F21F7604D00459BE0 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		CF3B7D7321F7940300459BE0 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = profile.storyboard; path = "/Users/ferdinandlosch/Local document/School/School/Storyboards/profile.storyboard"; sourceTree = "<absolute>"; };
+		CF3B7D7421F795C000459BE0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CF3D72B321EF44A20056CA88 /* School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D72B621EF44A20056CA88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3D72B821EF44A20056CA88 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBE8C7621EF66020059C661 /* Database.swift */,
+				CF3B7D6D21F73F0600459BE0 /* HomeworkModel.swift */,
 				CFE823FF21F2036900ED5604 /* GroupModel.swift */,
 				CFBE8C8521EFDB0F0059C661 /* SubjectModel.swift */,
 				CFE823DD21F0D29D00ED5604 /* GenericModel.swift */,
@@ -251,9 +263,10 @@
 				CFE823E421F0EFA300ED5604 /* Subject cell */,
 				CFE823E321F0EF9200ED5604 /* Generic cell */,
 				CFE823E921F0EFF400ED5604 /* Controller Cell */,
+				CFE8241E21F5F4AB00ED5604 /* DocumentView */,
 				CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */,
 				CFBE8C7321EF62140059C661 /* ProfileImageView.swift */,
-				CFE8241E21F5F4AB00ED5604 /* DocumentView */,
+				CF3B7D6F21F7604D00459BE0 /* AlertController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +277,8 @@
 				CF3D72B821EF44A20056CA88 /* HomeViewController.swift */,
 				CFE8240321F20E3100ED5604 /* SubjectViewController.swift */,
 				CFE8241121F5E5FD00ED5604 /* GroupViewController.swift */,
+				CF3B7D6B21F7297800459BE0 /* HomeworkViewController.swift */,
+				CF3B7D7421F795C000459BE0 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,8 +286,10 @@
 		CFBE8C7221EF605F0059C661 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B7D7321F7940300459BE0 /* profile.storyboard */,
 				CFE8241A21F5E7A400ED5604 /* Group.storyboard */,
 				CFE8240821F2286F00ED5604 /*  subject.storyboard */,
+				CF3B7D6921F728B900459BE0 /* Homework.storyboard */,
 				CF3D72BA21EF44A20056CA88 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -479,6 +496,7 @@
 				CFE8242021F5F4F800ED5604 /* DocView.xib in Resources */,
 				CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */,
 				CFE8242421F604B800ED5604 /* DocCell.xib in Resources */,
+				CF3B7D6A21F728B900459BE0 /* Homework.storyboard in Resources */,
 				CFE8240921F2286F00ED5604 /*  subject.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,7 +608,9 @@
 				CFE823DE21F0D29D00ED5604 /* GenericModel.swift in Sources */,
 				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
 				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
+				CF3B7D6E21F73F0600459BE0 /* HomeworkModel.swift in Sources */,
 				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
+				CF3B7D6C21F7297800459BE0 /* HomeworkViewController.swift in Sources */,
 				CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */,
 				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
 				CFE8240021F2036900ED5604 /* GroupModel.swift in Sources */,
@@ -599,7 +619,9 @@
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
 				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
 				CFE8241221F5E5FD00ED5604 /* GroupViewController.swift in Sources */,
+				CF3B7D7521F795C000459BE0 /* ProfileViewController.swift in Sources */,
 				CFE8240C21F25AFC00ED5604 /* SquareButtonCell.swift in Sources */,
+				CF3B7D7021F7604D00459BE0 /* AlertController.swift in Sources */,
 				CFBE8C7721EF66020059C661 /* Database.swift in Sources */,
 				CFBE8C8221EFD46B0059C661 /* SubjectCollectionViewCell.swift in Sources */,
 				CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */,

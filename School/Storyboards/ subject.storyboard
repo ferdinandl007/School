@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="30" id="wuh-Hg-ZIW"/>
                                 </constraints>
                                 <state key="normal" image="Chats icon"/>
+                                <connections>
+                                    <segue destination="XIr-C1-ci7" kind="show" id="iAB-gH-cdt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAF-ea-HNj">
                                 <rect key="frame" x="16" y="46" width="27" height="27"/>
@@ -153,6 +156,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGJ-MP-fbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956" y="30.295566502463057"/>
+        </scene>
+        <!--Homework-->
+        <scene sceneID="CUn-Rb-JZf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeworkViewController" storyboardName="Homework" id="XIr-C1-ci7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eH1-aZ-flY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="30"/>
         </scene>
     </scenes>
     <resources>

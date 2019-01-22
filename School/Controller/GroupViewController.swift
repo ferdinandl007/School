@@ -20,8 +20,6 @@ class GroupViewController: UIViewController {
     let database = Database()
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
         // Do any additional setup after loading the view.
        
         setUpCollectionView()
@@ -43,12 +41,11 @@ class GroupViewController: UIViewController {
         let layout = VegaScrollFlowLayout()
         collectionView.collectionViewLayout = layout
         layout.minimumLineSpacing = 10
-        layout.itemSize = CGSize(width: 335, height: 80)
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: collectionView.bounds.width - 20, height: 80)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10)
     }
 
     @IBAction func BackButton(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
     

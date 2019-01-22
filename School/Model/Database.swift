@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 
-
 class Database {
     
     func getUserProfilePhoto() -> UIImage {
@@ -18,9 +17,66 @@ class Database {
     }
     
     
+    
+    
+    func getEvents() -> [GenericModel] {
+         var updates =  [GenericModel]()
+        for i in 0...8 {
+            let num = Int.random(in: 0...4)
+            var name = ""
+            switch num {
+                case 0:
+                    name = "Physics"
+                    break
+                case 1:
+                    name = "Mathematics"
+                    break
+                case 2:
+                    name = "German"
+                    break
+                case 3:
+                     name = "English"
+                    break
+                default:
+                     name = "Geography"
+                    break
+            
+            }
+            
+            
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: name, topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "subject coursework submission"))
+        }
+        
+       return  updates
+    }
+    
+    
+    
+    
+    
+    func getHomeWork(with id: String) -> HomeworkModel {
+        
+        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "page 1")!
+        let docs = DocumentsModel(Document: [path1])
+        
+        var updates =  [GenericModel]()
+
+        
+        for i in 0...8 {
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Queen Elizabeth’s husband Prince Philip, 97, was driving himself in a Range Rover when he was involved in a traffic accident Thursday, Buckingham Palace told CNN.  He saw a doctor at the Queen’s Sandringham Estate. The doctor gave Philip, the Duke of Edinburgh, the all-clear."))
+        }
+        
+        let data = HomeworkModel(id: id, attachDocuments: docs, studentdocument: docs, subjectName: "dfres", updates: updates)
+        
+        return data
+    }
+    
+    
+    
+    
     func getUpdates(with id: String) -> GroupModel {
         var updates =  [GenericModel]()
-        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "ddd")!
+        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "page 1")!
         let docs = DocumentsModel(Document: [path1])
         
         
