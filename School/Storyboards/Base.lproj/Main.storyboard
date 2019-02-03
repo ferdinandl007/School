@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j3b-vW-kSd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlX-ek-cb8">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,84 @@
             </objects>
             <point key="canvasLocation" x="-1036" y="20"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Chats-->
+        <scene sceneID="vnV-Bi-bvi">
+            <objects>
+                <viewController id="4H1-81-6gf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gx6-eg-E3O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r9-bn-svb">
+                                <rect key="frame" x="85.666666666666686" y="427" width="243" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7r9-bn-svb" firstAttribute="centerX" secondItem="gx6-eg-E3O" secondAttribute="centerX" id="Qx4-iJ-oGX"/>
+                            <constraint firstItem="7r9-bn-svb" firstAttribute="centerY" secondItem="gx6-eg-E3O" secondAttribute="centerY" id="YPX-Jo-7Xq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cqN-z8-if6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chats" image="💭 " id="n95-b2-IdX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wid-WD-R64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1464" y="511"/>
+        </scene>
+        <!--Vertretungsplan-->
+        <scene sceneID="wfT-Zh-FD8">
+            <objects>
+                <viewController id="HT1-aV-cre" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTB-5J-NfM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTY-eV-hnl">
+                                <rect key="frame" x="85.666666666666686" y="427" width="243" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yTY-eV-hnl" firstAttribute="centerY" secondItem="CTB-5J-NfM" secondAttribute="centerY" id="ayU-4O-YxF"/>
+                            <constraint firstItem="yTY-eV-hnl" firstAttribute="centerX" secondItem="CTB-5J-NfM" secondAttribute="centerX" id="rlU-xP-fAQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lqr-jA-eRA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vertretungsplan" image="okicon" id="aN4-a7-q6a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSR-RJ-jul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="-509"/>
+        </scene>
+        <!--Flashy Tab Bar Controller-->
+        <scene sceneID="dDr-0v-tgS">
+            <objects>
+                <tabBarController id="wlX-ek-cb8" customClass="CBFlashyTabBarController" customModule="School" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9gZ-18-EHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j3b-vW-kSd" kind="relationship" relationship="viewControllers" id="TVT-Cb-aGS"/>
+                        <segue destination="XEc-gh-Hwl" kind="relationship" relationship="viewControllers" id="O45-rh-DHi"/>
+                        <segue destination="4H1-81-6gf" kind="relationship" relationship="viewControllers" id="Egb-WT-hUC"/>
+                        <segue destination="HT1-aV-cre" kind="relationship" relationship="viewControllers" id="3Ak-X6-LHu"/>
+                        <segue destination="FMj-5x-EF9" kind="relationship" relationship="viewControllers" id="PZZ-t6-Frf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b25-wk-n5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2445" y="9"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="qsC-AF-R6p">
             <objects>
                 <viewController id="j3b-vW-kSd" customClass="HomeViewController" customModule="School" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +175,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fEW-A1-feT">
-                                <rect key="frame" x="0.0" y="124" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="729"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="22" minimumInteritemSpacing="0.0" id="4Q4-Ik-tGg">
                                     <size key="itemSize" width="378" height="643"/>
@@ -108,12 +185,6 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLu-kB-wGq" customClass="CBFlashyTabBar" customModule="School" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="847" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items/>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -129,6 +200,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7t3-PV-teV"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="notRectangle" selectedImage="notRectangle" id="fyx-1T-8ml"/>
                     <connections>
                         <outlet property="CurrentSelectionLabel" destination="jVR-RX-63S" id="kKJ-02-Xju"/>
                         <outlet property="contentCollectionView" destination="fEW-A1-feT" id="1Ug-yP-mT0"/>
@@ -157,7 +229,7 @@
             </objects>
             <point key="canvasLocation" x="1057" y="0.0"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profil-->
         <scene sceneID="bzA-Zb-GWW">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XEc-gh-Hwl" customClass="ProfileViewController" customModule="School" sceneMemberID="viewController">
@@ -352,6 +424,7 @@ School</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4GW-TO-Gdz"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="Profil bekommen" selectedImage="Profil bekommen" id="mV1-Yj-nOo"/>
                     <connections>
                         <outlet property="classLabel" destination="FVa-io-ZRl" id="P03-Hi-CZ5"/>
                         <outlet property="collectionView" destination="c5x-gH-bHK" id="ETB-Uq-tBy"/>
@@ -376,9 +449,42 @@ School</string>
             </objects>
             <point key="canvasLocation" x="1822" y="30"/>
         </scene>
+        <!--Calendar-->
+        <scene sceneID="ecr-la-DCX">
+            <objects>
+                <viewController id="FMj-5x-EF9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5l9-R2-NBC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-5h-Rao">
+                                <rect key="frame" x="85.666666666666686" y="427" width="243" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c0n-5h-Rao" firstAttribute="centerY" secondItem="5l9-R2-NBC" secondAttribute="centerY" id="ZyP-Lx-BwQ"/>
+                            <constraint firstItem="c0n-5h-Rao" firstAttribute="centerX" secondItem="5l9-R2-NBC" secondAttribute="centerX" id="pyz-cW-QiW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UJh-gZ-Chb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="5" id="YAb-Kr-wll"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DJ-Qg-tJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2867" y="832"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="5" width="24" height="28"/>
         <image name="BackButton" width="30" height="30"/>
+        <image name="Profil bekommen" width="18" height="20"/>
         <image name="location-icon" width="12" height="20"/>
+        <image name="notRectangle" width="15" height="20"/>
+        <image name="okicon" width="24" height="20"/>
+        <image name="💭 " width="20" height="16"/>
     </resources>
 </document>
