@@ -200,7 +200,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7t3-PV-teV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="notRectangle" selectedImage="notRectangle" id="fyx-1T-8ml"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="today_apps" selectedImage="today_apps" id="fyx-1T-8ml"/>
                     <connections>
                         <outlet property="CurrentSelectionLabel" destination="jVR-RX-63S" id="kKJ-02-Xju"/>
                         <outlet property="contentCollectionView" destination="fEW-A1-feT" id="1Ug-yP-mT0"/>
@@ -471,7 +471,7 @@ School</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UJh-gZ-Chb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="5" id="YAb-Kr-wll"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" selectedImage="calendar" id="YAb-Kr-wll"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4DJ-Qg-tJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -479,12 +479,12 @@ School</string>
         </scene>
     </scenes>
     <resources>
-        <image name="5" width="24" height="28"/>
         <image name="BackButton" width="30" height="30"/>
         <image name="Profil bekommen" width="18" height="20"/>
+        <image name="calendar" width="18" height="20"/>
         <image name="location-icon" width="12" height="20"/>
-        <image name="notRectangle" width="15" height="20"/>
         <image name="okicon" width="24" height="20"/>
+        <image name="today_apps" width="30" height="30"/>
         <image name="💭 " width="20" height="16"/>
     </resources>
 </document>
