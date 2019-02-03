@@ -7,12 +7,17 @@
 //
 
 import UIKit
+
 import VegaScrollFlowLayout
+
 
 class HomeViewController: UIViewController {
     
 
+   
     @IBOutlet weak var dayLabel: UILabel!
+    
+    
     
     @IBOutlet weak var CurrentSelectionLabel: UILabel!
     
@@ -42,7 +47,7 @@ class HomeViewController: UIViewController {
         dayLabel.text  = getDay()
         // Do collection View stuff
         setUpCollectionView()
-       
+        Updatetext(with: 0)
 
 
     
@@ -91,6 +96,9 @@ class HomeViewController: UIViewController {
     
     @IBAction func goToProfile(_ sender: Any) {
         print("efhsrjtmrtdfzsfc")
+        let homeView = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        present(homeView, animated: true, completion: nil)
+        
     }
     
     
@@ -202,14 +210,14 @@ extension HomeViewController: UIScrollViewDelegate {
 
 
 extension HomeViewController: CellDelegate {
+    
     func colCategorySelected(with indexPath: IndexPath, and Category: Int) {
         
         switch Category {
         case 0:
             
-            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "SubjectViewController") as! SubjectViewController
-            
-            homeView.data = database.getToDayssubjects()[indexPath.row]
+            let homeView = self.storyboard?.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
+            homeView.data = database.getToDaysSubjects()[indexPath.row]
             present(homeView, animated: true, completion: nil)
             
             break

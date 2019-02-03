@@ -10,6 +10,18 @@
 		0F0174F401A38EAEDCC118CA /* Pods_SchoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18084F677B385D0B41C897D1 /* Pods_SchoolTests.framework */; };
 		5D51FCF60892456BAE2E1A1B /* Pods_SchoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0B5282111C62B66E82C4B0 /* Pods_SchoolUITests.framework */; };
 		69AB7AF352A475BE4E8300B2 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092FB2EC49BC4B00B69084DF /* Pods_School.framework */; };
+		CF2452412205C19300535C05 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2452402205C19300535C05 /* FeedViewController.swift */; };
+		CF2452472205C4BD00535C05 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2452452205C4BD00535C05 /* HeaderCell.swift */; };
+		CF2452482205C4BD00535C05 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2452462205C4BD00535C05 /* HeaderCell.xib */; };
+		CF24524A2205D02200535C05 /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2452492205D02200535C05 /* HeaderSectionController.swift */; };
+		CF39D45122031473007286DD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = CF39D44422031472007286DD /* .gitkeep */; };
+		CF39D45222031473007286DD /* CBTabItemSelectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44622031472007286DD /* CBTabItemSelectAnimation.swift */; };
+		CF39D45322031473007286DD /* CBTabItemBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44722031472007286DD /* CBTabItemBasicAnimation.swift */; };
+		CF39D45422031473007286DD /* CBTabItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44822031472007286DD /* CBTabItemAnimation.swift */; };
+		CF39D45522031473007286DD /* CBTabItemDeselectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44922031472007286DD /* CBTabItemDeselectAnimation.swift */; };
+		CF39D45622031473007286DD /* CBFlashyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44A22031472007286DD /* CBFlashyTabBar.swift */; };
+		CF39D45722031473007286DD /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44B22031472007286DD /* CBTabBarButton.swift */; };
+		CF39D45822031473007286DD /* CBFlashyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39D44C22031472007286DD /* CBFlashyTabBarController.swift */; };
 		CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */; };
 		CF3B7D6621F63B4A00459BE0 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */; };
 		CF3B7D6821F646DE00459BE0 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B7D6721F646DE00459BE0 /* URLExtension.swift */; };
@@ -25,6 +37,21 @@
 		CF3D72C121EF44A50056CA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3D72BF21EF44A50056CA88 /* LaunchScreen.storyboard */; };
 		CF3D72CC21EF44A50056CA88 /* SchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72CB21EF44A50056CA88 /* SchoolTests.swift */; };
 		CF3D72D721EF44A50056CA88 /* SchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D72D621EF44A50056CA88 /* SchoolUITests.swift */; };
+		CF892A2B2205E95B0094A774 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A292205E95B0094A774 /* DocumentCell.swift */; };
+		CF892A2C2205E95B0094A774 /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF892A2A2205E95B0094A774 /* DocumentCell.xib */; };
+		CF892A2E2205ED090094A774 /* DocumentSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A2D2205ED090094A774 /* DocumentSectionController.swift */; };
+		CF892A302205F9FF0094A774 /* NSObject+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A2F2205F9FE0094A774 /* NSObject+ListDiffable.swift */; };
+		CF892A34220609A20094A774 /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A32220609A20094A774 /* SectionHeaderCell.swift */; };
+		CF892A35220609A20094A774 /* SectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF892A33220609A20094A774 /* SectionHeaderCell.xib */; };
+		CF892A3722060CF00094A774 /* SectionHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A3622060CF00094A774 /* SectionHeaderSectionController.swift */; };
+		CF892A3922060FCB0094A774 /* GenericCellSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A3822060FCB0094A774 /* GenericCellSectionController.swift */; };
+		CF892A3C220631380094A774 /* OptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A3B220631380094A774 /* OptionsCell.swift */; };
+		CF892A3E2206356C0094A774 /* OptionsSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A3D2206356C0094A774 /* OptionsSectionController.swift */; };
+		CF892A4022063C260094A774 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A3F22063C260094A774 /* TextSize.swift */; };
+		CF892A4222063D200094A774 /* Forwarding delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A4122063D200094A774 /* Forwarding delegate.swift */; };
+		CF892A48220713480094A774 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A46220713480094A774 /* AlertCell.swift */; };
+		CF892A49220713480094A774 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF892A47220713480094A774 /* AlertCell.xib */; };
+		CF892A4B22071C220094A774 /* AlertSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A4A22071C220094A774 /* AlertSectionController.swift */; };
 		CFBE8C7421EF62140059C661 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7321EF62140059C661 /* ProfileImageView.swift */; };
 		CFBE8C7721EF66020059C661 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7621EF66020059C661 /* Database.swift */; };
 		CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */; };
@@ -79,6 +106,19 @@
 		6F0B5282111C62B66E82C4B0 /* Pods_SchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A336BE44F0F5AD87EE13B949 /* Pods-SchoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolTests/Pods-SchoolTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8C1A211193CAAD75D10B022 /* Pods-SchoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolUITests/Pods-SchoolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF2452402205C19300535C05 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		CF2452452205C4BD00535C05 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		CF2452462205C4BD00535C05 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		CF2452492205D02200535C05 /* HeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
+		CF39D44422031472007286DD /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		CF39D44622031472007286DD /* CBTabItemSelectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemSelectAnimation.swift; sourceTree = "<group>"; };
+		CF39D44722031472007286DD /* CBTabItemBasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemBasicAnimation.swift; sourceTree = "<group>"; };
+		CF39D44822031472007286DD /* CBTabItemAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemAnimation.swift; sourceTree = "<group>"; };
+		CF39D44922031472007286DD /* CBTabItemDeselectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemDeselectAnimation.swift; sourceTree = "<group>"; };
+		CF39D44A22031472007286DD /* CBFlashyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBFlashyTabBar.swift; sourceTree = "<group>"; };
+		CF39D44B22031472007286DD /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabBarButton.swift; sourceTree = "<group>"; };
+		CF39D44C22031472007286DD /* CBFlashyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBFlashyTabBarController.swift; sourceTree = "<group>"; };
+		CF39D44D22031472007286DD /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBFlashyTabBarController.h; sourceTree = "<group>"; };
 		CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocDelegate.swift; sourceTree = "<group>"; };
 		CF3B7D6221F6286100459BE0 /* School.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = School.entitlements; sourceTree = "<group>"; };
 		CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
@@ -87,7 +127,6 @@
 		CF3B7D6B21F7297800459BE0 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 		CF3B7D6D21F73F0600459BE0 /* HomeworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkModel.swift; sourceTree = "<group>"; };
 		CF3B7D6F21F7604D00459BE0 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
-		CF3B7D7321F7940300459BE0 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = profile.storyboard; path = "/Users/ferdinandlosch/Local document/School/School/Storyboards/profile.storyboard"; sourceTree = "<absolute>"; };
 		CF3B7D7421F795C000459BE0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CF3D72B321EF44A20056CA88 /* School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D72B621EF44A20056CA88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +141,21 @@
 		CF3D72D221EF44A50056CA88 /* SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D72D621EF44A50056CA88 /* SchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUITests.swift; sourceTree = "<group>"; };
 		CF3D72D821EF44A50056CA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF892A292205E95B0094A774 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
+		CF892A2A2205E95B0094A774 /* DocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
+		CF892A2D2205ED090094A774 /* DocumentSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSectionController.swift; sourceTree = "<group>"; };
+		CF892A2F2205F9FE0094A774 /* NSObject+ListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ListDiffable.swift"; sourceTree = "<group>"; };
+		CF892A32220609A20094A774 /* SectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
+		CF892A33220609A20094A774 /* SectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCell.xib; sourceTree = "<group>"; };
+		CF892A3622060CF00094A774 /* SectionHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderSectionController.swift; sourceTree = "<group>"; };
+		CF892A3822060FCB0094A774 /* GenericCellSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellSectionController.swift; sourceTree = "<group>"; };
+		CF892A3B220631380094A774 /* OptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCell.swift; sourceTree = "<group>"; };
+		CF892A3D2206356C0094A774 /* OptionsSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSectionController.swift; sourceTree = "<group>"; };
+		CF892A3F22063C260094A774 /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
+		CF892A4122063D200094A774 /* Forwarding delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forwarding delegate.swift"; sourceTree = "<group>"; };
+		CF892A46220713480094A774 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
+		CF892A47220713480094A774 /* AlertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
+		CF892A4A22071C220094A774 /* AlertSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSectionController.swift; sourceTree = "<group>"; };
 		CFBE8C7321EF62140059C661 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		CFBE8C7621EF66020059C661 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
@@ -184,6 +238,76 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF2452422205C2EA00535C05 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A3F22063C260094A774 /* TextSize.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		CF2452432205C42800535C05 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF2452492205D02200535C05 /* HeaderSectionController.swift */,
+				CF892A3622060CF00094A774 /* SectionHeaderSectionController.swift */,
+				CF892A2D2205ED090094A774 /* DocumentSectionController.swift */,
+				CF892A3822060FCB0094A774 /* GenericCellSectionController.swift */,
+				CF892A3D2206356C0094A774 /* OptionsSectionController.swift */,
+				CF892A4A22071C220094A774 /* AlertSectionController.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		CF2452442205C48900535C05 /* Header cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF2452452205C4BD00535C05 /* HeaderCell.swift */,
+				CF2452462205C4BD00535C05 /* HeaderCell.xib */,
+			);
+			path = "Header cell";
+			sourceTree = "<group>";
+		};
+		CF39D44222031472007286DD /* CBFlashyTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CF39D44322031472007286DD /* Classes */,
+				CF39D44D22031472007286DD /* CBFlashyTabBarController.h */,
+				CF39D44E22031472007286DD /* Assets */,
+			);
+			path = CBFlashyTabBarController;
+			sourceTree = "<group>";
+		};
+		CF39D44322031472007286DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF39D44422031472007286DD /* .gitkeep */,
+				CF39D44522031472007286DD /* Animation */,
+				CF39D44A22031472007286DD /* CBFlashyTabBar.swift */,
+				CF39D44B22031472007286DD /* CBTabBarButton.swift */,
+				CF39D44C22031472007286DD /* CBFlashyTabBarController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CF39D44522031472007286DD /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				CF39D44622031472007286DD /* CBTabItemSelectAnimation.swift */,
+				CF39D44722031472007286DD /* CBTabItemBasicAnimation.swift */,
+				CF39D44822031472007286DD /* CBTabItemAnimation.swift */,
+				CF39D44922031472007286DD /* CBTabItemDeselectAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		CF39D44E22031472007286DD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		CF3D72AA21EF44A20056CA88 = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +337,9 @@
 				CFE8240521F2149A00ED5604 /* Protocols */,
 				CFBE8C7521EF63ED0059C661 /* Extensions */,
 				CFBE8C6F21EF60060059C661 /* Model */,
+				CF2452422205C2EA00535C05 /* System */,
 				CFBE8C7021EF60120059C661 /* View */,
+				CF2452432205C42800535C05 /* SectionControllers */,
 				CFBE8C7121EF60300059C661 /* Controller */,
 				CFBE8C7221EF605F0059C661 /* Storyboards */,
 				CF3D72B621EF44A20056CA88 /* AppDelegate.swift */,
@@ -242,6 +368,41 @@
 			path = SchoolUITests;
 			sourceTree = "<group>";
 		};
+		CF892A282205E9130094A774 /* Documents Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A292205E95B0094A774 /* DocumentCell.swift */,
+				CF892A2A2205E95B0094A774 /* DocumentCell.xib */,
+			);
+			path = "Documents Cell";
+			sourceTree = "<group>";
+		};
+		CF892A31220609770094A774 /* Section header */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A32220609A20094A774 /* SectionHeaderCell.swift */,
+				CF892A33220609A20094A774 /* SectionHeaderCell.xib */,
+			);
+			path = "Section header";
+			sourceTree = "<group>";
+		};
+		CF892A3A220630E10094A774 /* options sell */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A3B220631380094A774 /* OptionsCell.swift */,
+			);
+			path = "options sell";
+			sourceTree = "<group>";
+		};
+		CF892A43220712B70094A774 /*  alert cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A46220713480094A774 /* AlertCell.swift */,
+				CF892A47220713480094A774 /* AlertCell.xib */,
+			);
+			path = " alert cell";
+			sourceTree = "<group>";
+		};
 		CFBE8C6F21EF60060059C661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +420,12 @@
 		CFBE8C7021EF60120059C661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF892A43220712B70094A774 /*  alert cell */,
+				CF892A3A220630E10094A774 /* options sell */,
+				CF2452442205C48900535C05 /* Header cell */,
+				CF892A31220609770094A774 /* Section header */,
+				CF892A282205E9130094A774 /* Documents Cell */,
+				CF39D44222031472007286DD /* CBFlashyTabBarController */,
 				CFE8240E21F25B0100ED5604 /* SquareButtonCell */,
 				CFE823E421F0EFA300ED5604 /* Subject cell */,
 				CFE823E321F0EF9200ED5604 /* Generic cell */,
@@ -279,6 +446,7 @@
 				CFE8241121F5E5FD00ED5604 /* GroupViewController.swift */,
 				CF3B7D6B21F7297800459BE0 /* HomeworkViewController.swift */,
 				CF3B7D7421F795C000459BE0 /* ProfileViewController.swift */,
+				CF2452402205C19300535C05 /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,7 +454,6 @@
 		CFBE8C7221EF605F0059C661 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B7D7321F7940300459BE0 /* profile.storyboard */,
 				CFE8241A21F5E7A400ED5604 /* Group.storyboard */,
 				CFE8240821F2286F00ED5604 /*  subject.storyboard */,
 				CF3B7D6921F728B900459BE0 /* Homework.storyboard */,
@@ -298,6 +465,7 @@
 		CFBE8C7521EF63ED0059C661 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CF892A2F2205F9FE0094A774 /* NSObject+ListDiffable.swift */,
 				CFBE8C8721EFE3500059C661 /* UIViewExtensions.swift */,
 				CFE823EA21F0FBB800ED5604 /* UICollectionViewExtension.swift */,
 				CF3B7D6521F63B4A00459BE0 /* ImageExtension.swift */,
@@ -338,6 +506,7 @@
 			children = (
 				CFE8240621F214BF00ED5604 /* CellDelegateProtocol.swift */,
 				CF3B7D5E21F619E600459BE0 /* DocDelegate.swift */,
+				CF892A4122063D200094A774 /* Forwarding delegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -487,13 +656,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBE8C8421EFD4940059C661 /* Subject.xib in Resources */,
+				CF892A49220713480094A774 /* AlertCell.xib in Resources */,
 				CF3D72C121EF44A50056CA88 /* LaunchScreen.storyboard in Resources */,
+				CF2452482205C4BD00535C05 /* HeaderCell.xib in Resources */,
 				CFE8240D21F25AFC00ED5604 /* SquareButtonCell.xib in Resources */,
+				CF892A35220609A20094A774 /* SectionHeaderCell.xib in Resources */,
 				CF3D72BE21EF44A50056CA88 /* Assets.xcassets in Resources */,
 				CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */,
+				CF892A2C2205E95B0094A774 /* DocumentCell.xib in Resources */,
 				CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */,
 				CFE8241B21F5E7A400ED5604 /* Group.storyboard in Resources */,
 				CFE8242021F5F4F800ED5604 /* DocView.xib in Resources */,
+				CF39D45122031473007286DD /* .gitkeep in Resources */,
 				CFE823DC21F0CBB000ED5604 /* GenericCell.xib in Resources */,
 				CFE8242421F604B800ED5604 /* DocCell.xib in Resources */,
 				CF3B7D6A21F728B900459BE0 /* Homework.storyboard in Resources */,
@@ -562,12 +736,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-School/Pods-School-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GravitySliderFlowLayout/GravitySliderFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/WeScan/WeScan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GravitySliderFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeScan.framework",
 			);
@@ -602,32 +782,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE8241021F25DA500ED5604 /* SquareButtonModel.swift in Sources */,
+				CF39D45422031473007286DD /* CBTabItemAnimation.swift in Sources */,
+				CF892A4222063D200094A774 /* Forwarding delegate.swift in Sources */,
 				CFE8240721F214BF00ED5604 /* CellDelegateProtocol.swift in Sources */,
 				CFBE8C7421EF62140059C661 /* ProfileImageView.swift in Sources */,
+				CF892A302205F9FF0094A774 /* NSObject+ListDiffable.swift in Sources */,
 				CF3D72B921EF44A20056CA88 /* HomeViewController.swift in Sources */,
 				CFE823DE21F0D29D00ED5604 /* GenericModel.swift in Sources */,
+				CF892A3922060FCB0094A774 /* GenericCellSectionController.swift in Sources */,
+				CF24524A2205D02200535C05 /* HeaderSectionController.swift in Sources */,
 				CFE823EB21F0FBB800ED5604 /* UICollectionViewExtension.swift in Sources */,
+				CF892A3E2206356C0094A774 /* OptionsSectionController.swift in Sources */,
+				CF39D45222031473007286DD /* CBTabItemSelectAnimation.swift in Sources */,
 				CFE823E721F0EFEE00ED5604 /* ControllerCell.swift in Sources */,
+				CF892A2E2205ED090094A774 /* DocumentSectionController.swift in Sources */,
 				CF3B7D6E21F73F0600459BE0 /* HomeworkModel.swift in Sources */,
+				CF2452412205C19300535C05 /* FeedViewController.swift in Sources */,
 				CFE8240421F20E3100ED5604 /* SubjectViewController.swift in Sources */,
 				CF3B7D6C21F7297800459BE0 /* HomeworkViewController.swift in Sources */,
+				CF892A4022063C260094A774 /* TextSize.swift in Sources */,
 				CF3B7D5F21F619E600459BE0 /* DocDelegate.swift in Sources */,
 				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
+				CF39D45622031473007286DD /* CBFlashyTabBar.swift in Sources */,
 				CFE8240021F2036900ED5604 /* GroupModel.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
 				CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
+				CF39D45322031473007286DD /* CBTabItemBasicAnimation.swift in Sources */,
+				CF892A48220713480094A774 /* AlertCell.swift in Sources */,
 				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
+				CF892A4B22071C220094A774 /* AlertSectionController.swift in Sources */,
+				CF892A3722060CF00094A774 /* SectionHeaderSectionController.swift in Sources */,
 				CFE8241221F5E5FD00ED5604 /* GroupViewController.swift in Sources */,
+				CF892A2B2205E95B0094A774 /* DocumentCell.swift in Sources */,
 				CF3B7D7521F795C000459BE0 /* ProfileViewController.swift in Sources */,
+				CF39D45822031473007286DD /* CBFlashyTabBarController.swift in Sources */,
 				CFE8240C21F25AFC00ED5604 /* SquareButtonCell.swift in Sources */,
+				CF892A34220609A20094A774 /* SectionHeaderCell.swift in Sources */,
 				CF3B7D7021F7604D00459BE0 /* AlertController.swift in Sources */,
+				CF2452472205C4BD00535C05 /* HeaderCell.swift in Sources */,
+				CF892A3C220631380094A774 /* OptionsCell.swift in Sources */,
 				CFBE8C7721EF66020059C661 /* Database.swift in Sources */,
 				CFBE8C8221EFD46B0059C661 /* SubjectCollectionViewCell.swift in Sources */,
 				CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */,
 				CF3B7D6821F646DE00459BE0 /* URLExtension.swift in Sources */,
 				CF3D72B721EF44A20056CA88 /* AppDelegate.swift in Sources */,
 				CF3B7D6621F63B4A00459BE0 /* ImageExtension.swift in Sources */,
+				CF39D45522031473007286DD /* CBTabItemDeselectAnimation.swift in Sources */,
+				CF39D45722031473007286DD /* CBTabBarButton.swift in Sources */,
 				CFE8241D21F5F4A200ED5604 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -806,16 +1008,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = School/School.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				DEVELOPMENT_TEAM = 44FZM7794V;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.MySchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -826,16 +1026,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = School/School.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				DEVELOPMENT_TEAM = 44FZM7794V;
 				INFOPLIST_FILE = School/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.School;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.MySchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -848,11 +1046,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -870,11 +1064,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -891,11 +1081,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -912,11 +1098,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

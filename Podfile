@@ -7,7 +7,9 @@ target 'School' do
   pod 'VegaScrollFlowLayout'
   pod 'GravitySliderFlowLayout'
   pod 'WeScan', '>= 0.9'
-
+  pod 'IGListKit', '~> 3.0'
+  pod "Reusable"
+  pod 'MarqueeLabel/Swift'
 
 
   # Pods for School

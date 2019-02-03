@@ -48,6 +48,9 @@ class GroupViewController: UIViewController {
     @IBAction func BackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBAction func chatButton(_ sender: Any) {
+        displayComingSoon(with: self)
+    }
     
   
 

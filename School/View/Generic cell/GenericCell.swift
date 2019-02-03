@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class GenericCell: UICollectionViewCell {
+import Reusable
+class GenericCell: UICollectionViewCell,NibReusable {
 
     @IBOutlet weak var dot: UIImageView!
     @IBOutlet weak var topLeftLabel: UILabel!
@@ -32,8 +32,8 @@ class GenericCell: UICollectionViewCell {
         self.clipsToBounds = false
         self.backgroundColor = UIColor.clear
         self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 13)
-        self.layer.shadowOpacity = 0.14
+        self.layer.shadowOffset = CGSize(width: 0, height: 10)
+        self.layer.shadowOpacity = 0.10
         self.layer.shadowRadius = 4.0
     }
     

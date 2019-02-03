@@ -9,7 +9,7 @@
 import Foundation
 
 import UIKit
-struct SquareButtonModel {
+class SquareButtonModel:NSObject {
     let image: UIImage
     let label: String
     init(image _image: UIImage,label _label: String) {

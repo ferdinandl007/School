@@ -1,24 +1,44 @@
 PODS:
   - GravitySliderFlowLayout (1.0)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - MarqueeLabel/Swift (3.2.0)
+  - Reusable (4.0.4):
+    - Reusable/Storyboard (= 4.0.4)
+    - Reusable/View (= 4.0.4)
+  - Reusable/Storyboard (4.0.4)
+  - Reusable/View (4.0.4)
   - VegaScrollFlowLayout (1.1)
   - WeScan (0.9.1)
 
 DEPENDENCIES:
   - GravitySliderFlowLayout
+  - IGListKit (~> 3.0)
+  - MarqueeLabel/Swift
+  - Reusable
   - VegaScrollFlowLayout
   - WeScan (>= 0.9)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GravitySliderFlowLayout
+    - IGListKit
+    - MarqueeLabel
+    - Reusable
     - VegaScrollFlowLayout
     - WeScan
 
 SPEC CHECKSUMS:
   GravitySliderFlowLayout: bb9ae6a302b85821c9e0271c00533fae8091143b
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  Reusable: 7fc772097df3e5fc86f59d8a7af9708e49b5ff55
   VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
   WeScan: 85518097ab11d38be3b3a6e0ae244d59bc8071b4
 
-PODFILE CHECKSUM: 6619cc91e22716a587f0a575e3b3587db17fa762
+PODFILE CHECKSUM: 0921a0a10864df8fe40480553aa597acf16e56f5
 
 COCOAPODS: 1.5.3

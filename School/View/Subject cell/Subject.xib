@@ -29,7 +29,7 @@
                             <rect key="frame" x="0.0" y="200" width="335" height="82"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-xh-Ax7">
-                                    <rect key="frame" x="19" y="10" width="72" height="23"/>
+                                    <rect key="frame" x="19" y="10" width="308" height="23"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                     <nil key="textColor"/>
@@ -42,6 +42,20 @@
                                     <color key="textColor" red="0.55720710750000002" green="0.55633765459999995" blue="0.5764759183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJw-Sr-5bc">
+                                    <rect key="frame" x="228" y="25" width="99" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jz2-3w-7Df">
+                                            <rect key="frame" x="5" y="0.0" width="89" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.84254951720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -77,6 +91,8 @@
                 <outlet property="content" destination="JiA-bm-gJX" id="cbx-S7-H7s"/>
                 <outlet property="image" destination="99t-4K-cpE" id="Hv3-ZT-s7j"/>
                 <outlet property="infoLabel" destination="0wr-gu-uUg" id="XbW-pd-Z2H"/>
+                <outlet property="onTimeLabel" destination="Jz2-3w-7Df" id="fV1-1z-pjG"/>
+                <outlet property="onTimeView" destination="YJw-Sr-5bc" id="g7G-gB-Ri1"/>
                 <outlet property="subjectLabel" destination="ysW-xh-Ax7" id="Ykd-o3-gBC"/>
             </connections>
             <point key="canvasLocation" x="128.2608695652174" y="-162.22826086956522"/>

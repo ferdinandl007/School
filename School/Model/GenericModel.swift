@@ -7,9 +7,15 @@
 //
 
 import Foundation
-struct GenericModel {
+class GenericModel: NSObject {
     let ID: String
     let topLeftLabel: String
     let topRightLabel: String
     let mainText: String
+    init(ID: String, topLeftLabel: String, topRightLabel: String, mainText: String ) {
+        self.ID = ID
+        self.topLeftLabel = topLeftLabel
+        self.topRightLabel = topRightLabel
+        self.mainText = mainText
+    }
 }

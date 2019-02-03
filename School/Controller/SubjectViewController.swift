@@ -34,7 +34,10 @@ class SubjectViewController: UIViewController {
         
     }
     
-
+    @IBAction func chatButton(_ sender: Any) {
+        displayComingSoon(with: self)
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -56,8 +59,9 @@ class SubjectViewController: UIViewController {
         OptionsCollectionView.delegate = self
         OptionsCollectionView.register(UINib.init(nibName: "SquareButtonCell", bundle: nil), forCellWithReuseIdentifier: "SquareButtonCell")
         let layout2 = UICollectionViewFlowLayout()
-        layout2.minimumLineSpacing = 10
-        layout2.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        layout2.minimumLineSpacing = 20
+        
+        layout2.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         OptionsCollectionView.collectionViewLayout = layout2
         OptionsCollectionView.isScrollEnabled = false
         
@@ -123,7 +127,7 @@ extension SubjectViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == OptionsCollectionView {
-            return CGSize(width: 141, height: 141)
+            return CGSize(width: collectionView.bounds.width / 2.3, height: collectionView.bounds.height / 2.3)
         } else {
             switch collectionView.indexPathsForSelectedItems?.first {
             case .some(indexPath):

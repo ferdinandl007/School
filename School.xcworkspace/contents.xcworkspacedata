@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ferdinandlosch/Local document/School/School/Storyboards/profile.storyboard">
-   </FileRef>
-   <FileRef
       location = "group:School.xcodeproj">
    </FileRef>
    <FileRef

@@ -7,7 +7,19 @@
 //
 
 import Foundation
-
-struct DocumentsModel {
+import IGListKit
+struct DocumentsModelmj {
+    var title: String
     var Document: [URL]
 }
+
+class DocumentsModel: NSObject {
+    var title: String
+    var Document: [URL]
+    
+    init(Document: [URL], title: String) {
+        self.Document = Document
+        self.title = title
+    }
+}
+

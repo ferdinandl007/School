@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HeaderCell" reuseIdentifier="HeaderCell" id="gTV-IL-0wX" customClass="HeaderCell" customModule="School" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="86"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxY-dv-Wqb">
+                        <rect key="frame" x="11" y="0.0" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="WpG-pR-AmJ"/>
+                            <constraint firstAttribute="height" constant="27" id="wcX-ij-Yba"/>
+                        </constraints>
+                        <state key="normal" image="BackButton"/>
+                        <connections>
+                            <action selector="exitButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="PXi-FS-ndM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-IR-GaH">
+                        <rect key="frame" x="356" y="0.0" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5rX-4D-TDy"/>
+                            <constraint firstAttribute="width" constant="30" id="o3E-7o-ZHI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" image="Chats icon"/>
+                        <connections>
+                            <action selector="chatButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zgq-CB-Mjc"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-65-BOi">
+                        <rect key="frame" x="6" y="84" width="385" height="2"/>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="0.19865689210000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="jyK-n4-CNj"/>
+                            <constraint firstAttribute="height" constant="2" id="lKF-79-pZs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eg-Jr-6iN">
+                        <rect key="frame" x="7" y="38" width="383" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="IJQ-Ew-mnh"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="JBV-R1-Txc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5ow-65-BOi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="0KG-Xp-Lg8"/>
+                <constraint firstItem="uxY-dv-Wqb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="34U-d1-kMT"/>
+                <constraint firstAttribute="trailing" secondItem="8eg-Jr-6iN" secondAttribute="trailing" constant="7" id="L0H-uL-K7d"/>
+                <constraint firstItem="3QK-IR-GaH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RkO-9f-8yW"/>
+                <constraint firstItem="8eg-Jr-6iN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="RwR-92-jgm"/>
+                <constraint firstAttribute="trailing" secondItem="3QK-IR-GaH" secondAttribute="trailing" constant="11" id="Yjr-7G-n2b"/>
+                <constraint firstItem="uxY-dv-Wqb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="fpS-Vw-HuT"/>
+                <constraint firstAttribute="bottom" secondItem="8eg-Jr-6iN" secondAttribute="bottom" constant="5" id="jBq-Jt-gQU"/>
+                <constraint firstAttribute="bottom" secondItem="5ow-65-BOi" secondAttribute="bottom" id="ly9-cq-TWe"/>
+                <constraint firstAttribute="trailing" secondItem="5ow-65-BOi" secondAttribute="trailing" constant="6" id="mui-af-hlq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="397" height="86"/>
+            <connections>
+                <outlet property="label" destination="8eg-Jr-6iN" id="OIt-Ne-Eko"/>
+            </connections>
+            <point key="canvasLocation" x="407.19999999999999" y="172.71364317841082"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BackButton" width="30" height="30"/>
+        <image name="Chats icon" width="25" height="25"/>
+    </resources>
+</document>

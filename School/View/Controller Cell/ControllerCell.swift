@@ -82,7 +82,7 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch category {
         case 0:
-            return database.getToDayssubjects().count
+            return database.getToDaysSubjects().count
         case 1:
             return database.getGrupes().count
         default:
@@ -98,7 +98,7 @@ extension ControllerCell: UICollectionViewDelegate, UICollectionViewDataSource,U
         switch category {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Subject", for: indexPath) as! SubjectCollectionViewCell
-            cell.configure(with: database.getToDayssubjects()[indexPath.row])
+            cell.configure(with: database.getToDaysSubjects()[indexPath.row])
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GenericCell", for: indexPath) as! GenericCell

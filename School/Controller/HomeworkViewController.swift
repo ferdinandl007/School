@@ -58,6 +58,7 @@ class HomeworkViewController: UIViewController {
     }
     
     @IBAction func chatButton(_ sender: Any) {
+        displayComingSoon(with: self)
     }
 }
 
@@ -101,8 +102,6 @@ extension HomeworkViewController: UICollectionViewDelegate , UICollectionViewDat
                 return CGSize(width: collectionView.bounds.width - 30, height: 80)
             }
     }
-    
-    
 }
 
 

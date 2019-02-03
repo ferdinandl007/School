@@ -22,7 +22,7 @@ class DocumentView: UIView {
     
     
     public var delegate: DocDelegate?
-    public var data = DocumentsModel(Document: [])
+    public var data = DocumentsModel(Document: [], title: "")
     public var isEdibl = true {
         didSet {
             collectionView.reloadData()
@@ -213,17 +213,17 @@ extension DocumentView: UICollectionViewDelegate, UICollectionViewDataSource,UIC
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DocCell", for: indexPath) as! DocCell
         
         if indexPath.row == 0 && isEdibl {
-            cell.configure(with: "Add Documents", andWith: indexPath.row)
+            cell.configure(with: "Dokument hochladen", andWith: indexPath.row)
             return cell
         } else if !isEdibl && indexPath.row == 0 {
-            cell.configure(with: "Teachers documents", andWith: indexPath.row + 2)
+            cell.configure(with: "", andWith: indexPath.row + 2)
             return cell
         }
         
         let fileName = data.Document[indexPath.row - 1].extractAndBreakFilenameInComponents()
         
         if fileName.fileName.contains("frVg"){
-             cell.configure(with: "Page \(indexPath.row)", andWith: indexPath.row)
+             cell.configure(with: "Seite \(indexPath.row)", andWith: indexPath.row)
         } else {
             cell.configure(with: fileName.fileName, andWith: indexPath.row)
         }

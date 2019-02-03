@@ -26,25 +26,25 @@ class Database {
             var name = ""
             switch num {
                 case 0:
-                    name = "Physics"
+                    name = "Physik"
                     break
                 case 1:
-                    name = "Mathematics"
+                    name = "Mathematik"
                     break
                 case 2:
-                    name = "German"
+                    name = "Deutsch"
                     break
                 case 3:
-                     name = "English"
+                     name = "Englisch"
                     break
                 default:
-                     name = "Geography"
+                     name = "Geographie"
                     break
             
             }
             
             
-            updates.append( GenericModel(ID: "\(i)", topLeftLabel: name, topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "subject coursework submission"))
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: name, topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Klassenarbeit einreichen"))
         }
         
        return  updates
@@ -56,14 +56,14 @@ class Database {
     
     func getHomeWork(with id: String) -> HomeworkModel {
         
-        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "page 1")!
-        let docs = DocumentsModel(Document: [path1])
+        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "Site 1")!
+        let docs = DocumentsModel(Document: [path1], title: "Dokumente")
         
         var updates =  [GenericModel]()
 
         
         for i in 0...8 {
-            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Queen Elizabeth’s husband Prince Philip, 97, was driving himself in a Range Rover when he was involved in a traffic accident Thursday, Buckingham Palace told CNN.  He saw a doctor at the Queen’s Sandringham Estate. The doctor gave Philip, the Duke of Edinburgh, the all-clear."))
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Gnus versus Krokodil. Wenn die Augen mal wieder größer als der Magen sind ...vMehr davon bei #ErlebnisErde: Serengeti – Wettlauf ums Leben um 16:30 Uhr im Ersten"))
         }
         
         let data = HomeworkModel(id: id, attachDocuments: docs, studentdocument: docs, subjectName: "dfres", updates: updates)
@@ -76,49 +76,52 @@ class Database {
     
     func getUpdates(with id: String) -> GroupModel {
         var updates =  [GenericModel]()
-        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "page 1")!
-        let docs = DocumentsModel(Document: [path1])
+        let path1 =  #imageLiteral(resourceName: "kkk3").writeToFile(with: "Site 1")!
+        let docs = DocumentsModel(Document: [path1], title: "Dokumente")
         
         
         
         for i in 0...8 {
-            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Queen Elizabeth’s husband Prince Philip, 97, was driving himself in a Range Rover when he was involved in a traffic accident Thursday, Buckingham Palace told CNN.  He saw a doctor at the Queen’s Sandringham Estate. The doctor gave Philip, the Duke of Edinburgh, the all-clear."))
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Ferdinand", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Gnus versus Krokodil. Wenn die Augen mal wieder größer als der Magen sind ...vMehr davon bei #ErlebnisErde: Serengeti – Wettlauf ums Leben um 16:30 Uhr im Ersten"))
         }
         
-        let group = GroupModel(messagingID: id, groupName: "group xx", groupUpdates: updates, documents: docs)
+        let group = GroupModel(messagingID: id, groupName: "klasse xx", groupUpdates: updates, documents: docs)
         return group
         
     }
     
     
-    func getToDayssubjects() -> [SubjectModel] {
+    func getToDaysSubjects() -> [SubjectModel] {
         var data =  [SubjectModel]()
         var updates =  [GenericModel]()
         
         
         for i in 0...4 {
-            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Mr Saker", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Queen Elizabeth’s husband Prince Philip, 97, was driving himself in a Range Rover when he was involved in a traffic accident Thursday, Buckingham Palace told CNN.  He saw a doctor at the Queen’s Sandringham Estate. The doctor gave Philip, the Duke of Edinburgh, the all-clear."))
+            updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Mr Saker", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Gnus versus Krokodil. Wenn die Augen mal wieder größer als der Magen sind ...vMehr davon bei #ErlebnisErde: Serengeti – Wettlauf ums Leben um 16:30 Uhr im Ersten"))
         }
         
         
-        for i in 0...4 {
-            data.append(SubjectModel(_ID: "\(i)", _image: #imageLiteral(resourceName: "videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12"), _subjectName: "Science", _info: "Room 123A at 1:45PM  ", _Updates: updates, _documents: []))
-
-        }
+        
+        data.append(SubjectModel(_ID: "\(1)", _image: #imageLiteral(resourceName: "videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12"), _subjectName: "Naturwissenschaften", _info: "Raum 123A at 9:00 AM ", _Updates: updates, _documents: [], _onTime: .onTime))
+        data.append(SubjectModel(_ID: "\(2)", _image: #imageLiteral(resourceName: "Wirtschaft"), _subjectName: "Wirtschaft", _info: "Raum 13C at 11:45 AM ", _Updates: updates, _documents: [], _onTime: .change))
+        data.append(SubjectModel(_ID: "\(3)", _image: #imageLiteral(resourceName: "Englisch"), _subjectName: "Englisch", _info: "Raum 233B at 1:00 PM ", _Updates: updates, _documents: [], _onTime: .onTime))
+        data.append(SubjectModel(_ID: "\(4)", _image: #imageLiteral(resourceName: "Mathematik"), _subjectName: "Mathematik", _info: "Raum 10A at 2:00 PM ", _Updates: updates, _documents: [], _onTime: .cancelled))
+        data.append(SubjectModel(_ID: "\(5)", _image: #imageLiteral(resourceName: "Geographie"), _subjectName: "Geographie", _info: "Raum 189A at 3:45 PM ", _Updates: updates, _documents: [], _onTime: .onTime))
+        
         return data
     }
     
     func getOptions() -> [SquareButtonModel] {
-        let data = [SquareButtonModel(image: #imageLiteral(resourceName: "homeWork"), label: "home work"),
-                    SquareButtonModel(image: #imageLiteral(resourceName: "exam"), label: "Exam preparation"),
-                    SquareButtonModel(image: #imageLiteral(resourceName: "  resources"), label: "resources"),
-                    SquareButtonModel(image: #imageLiteral(resourceName: "hand_in"), label: "hand in")]
+        let data = [SquareButtonModel(image: #imageLiteral(resourceName: "homeWork"), label: "Hausaufgaben"),
+                    SquareButtonModel(image: #imageLiteral(resourceName: "exam"), label: "Test Vorbereitung"),
+                    SquareButtonModel(image: #imageLiteral(resourceName: "  resources"), label: "Ressourcen"),
+                    SquareButtonModel(image: #imageLiteral(resourceName: "hand_in"), label: "Einhändigen")]
         return data
     }
     
     
     func getCategoriesy() -> [String] {
-        return ["Today"," Groups","Appointments"]
+        return ["Heute","Klassen","Termine"]
     }
     
 //    func getGrupeInfo(With ID: String) ->  {
@@ -129,7 +132,7 @@ class Database {
     func getGrupes() ->  [GenericModel] {
         var data =  [GenericModel]()
         for i in 1...20 {
-            data.append(GenericModel(ID: "\(i)", topLeftLabel: "Group \(i)", topRightLabel: "Rome \((i * 33) % 200)", mainText: "The term voltage has been used to describe both the rating of a battery and the reading on"))
+            data.append(GenericModel(ID: "\(i)", topLeftLabel: "Klasse \(i)", topRightLabel: "Zimmer \((i * 33) % 200)", mainText: "Dieses Textfeldes für die letzte Mitteilung der Klasse gedacht"))
         }
         return data
     }
