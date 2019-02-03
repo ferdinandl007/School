@@ -15,7 +15,7 @@ class SectionHeaderSectionController: ListSectionController {
     
     override init() {
         super.init()
-        inset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+        inset = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 0)
     }
 }
 

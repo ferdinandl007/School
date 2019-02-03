@@ -12,6 +12,7 @@ import IGListKit
 import Reusable
 class GenericCellSectionController: ListSectionController {
     var genericModel: GenericModel!
+    private var expanded = false
     override init() {
         super.init()
         inset = UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 10)
@@ -29,6 +30,15 @@ extension GenericCellSectionController {
         guard let context = collectionContext else {
             return .zero
         }
+        
+       
+        
+        if (genericModel.mainText.count ) > 100 {
+            let height =  expanded ? 120.0 : 80.0
+            let width =  Double(context.containerSize.width - 15)
+            
+             return CGSize(width: width, height: height)
+       }
         return CGSize(width: context.containerSize.width - 30, height: 80)
     }
     
@@ -40,11 +50,20 @@ extension GenericCellSectionController {
         return cell
     }
     override func didSelectItem(at index: Int) {
-       
+        expanded = !expanded
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       usingSpringWithDamping: 0.4,
+                       initialSpringVelocity: 0.6,
+                       options: [],
+                       animations: {
+                        self.collectionContext?.invalidateLayout(for: self)
+        })
     }
     override func didUpdate(to object: Any) {
         genericModel = object as? GenericModel
         
     }
+    
     
 }

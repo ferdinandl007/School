@@ -38,12 +38,31 @@ class FeedViewController: UIViewController {
     
     
     
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+        let transition = CATransition()
+        transition.duration = 0.4
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.addSubview(collectionView)
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        
+
+        
     }
     
 
@@ -84,12 +103,28 @@ extension FeedViewController: ListAdapterDataSource {
             }
             items.append(AlertModel(text: txt, image: nil, color: x) as ListDiffable)
         }
-        //items.append(AlertModel(text: "Dieser Rettung für die Klasse wird Mr Müller übernehmen", image: #imageLiteral(resourceName: "Aicon ")) as ListDiffable)
+        
+        
+        
+        
         
         if model.Updates.prefix(2).count > 0 {
             items.append("Lehrer updates" as ListDiffable)
             items += Array(model.Updates.prefix(2)) as [ListDiffable]
         }
+        
+        if let homeWork = model.sethomeWork {
+             items.append("Nächste Hausaufgaben" as ListDiffable)
+             items += homeWork as [ListDiffable]
+
+        }
+        
+        if let events = model.events {
+            items.append("Anstehende Termine" as ListDiffable)
+            items += events as [ListDiffable]
+        }
+        
+        
        
         items.append("Admission" as ListDiffable)
         items.append(SquareButtonModel(image: #imageLiteral(resourceName: "_Notebook1"), label: "fd") as ListDiffable)
@@ -101,6 +136,7 @@ extension FeedViewController: ListAdapterDataSource {
     // 2
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any)
         -> ListSectionController {
+            
             if object is SectionHeader {
                 return HeaderSectionController()
             } else if object is GenericModel  {
@@ -109,8 +145,10 @@ extension FeedViewController: ListAdapterDataSource {
                 return OptionsSectionController()
             } else if object is AlertModel{
                 return AlertSectionController()
+            } else if object is EventsModel {
+                return EventSectionController()
             } else {
-                 return SectionHeaderSectionController()
+                return SectionHeaderSectionController()
             }
     }
     

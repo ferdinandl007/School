@@ -16,7 +16,7 @@ class AlertSectionController: ListSectionController {
     
     override init() {
         super.init()
-        inset = UIEdgeInsets(top: 10, left: 15, bottom: 25, right: 15)
+        inset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
     }
 }
 
@@ -32,8 +32,8 @@ extension AlertSectionController {
             return .zero
         }
        
-        let height =  expanded ? 44 : 50.0
-        let width = expanded ? 44 : Double(context.containerSize.width - 15)
+        let height =  expanded ? 46: 50.0
+        let width = expanded ? 46: Double(context.containerSize.width - 15)
         //let height = expanded ? 30 : Double(context.containerSize.width - 15)
         return CGSize(width: width, height: height)
     }

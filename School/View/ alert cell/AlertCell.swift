@@ -59,6 +59,12 @@ class AlertCell: UICollectionViewCell,NibReusable {
         self.layer.shadowRadius = 5.0
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        label.restartLabel()
+    }
+    
+    
     public func configure(with model: AlertModel) {
         switch model.color {
         case .red:

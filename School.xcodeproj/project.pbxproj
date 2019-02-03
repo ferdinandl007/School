@@ -52,6 +52,10 @@
 		CF892A48220713480094A774 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A46220713480094A774 /* AlertCell.swift */; };
 		CF892A49220713480094A774 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF892A47220713480094A774 /* AlertCell.xib */; };
 		CF892A4B22071C220094A774 /* AlertSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A4A22071C220094A774 /* AlertSectionController.swift */; };
+		CF892A5022074D850094A774 /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A4E22074D850094A774 /* EventsCell.swift */; };
+		CF892A5122074D850094A774 /* EventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF892A4F22074D850094A774 /* EventsCell.xib */; };
+		CF892A53220767E00094A774 /* EventSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A52220767E00094A774 /* EventSectionController.swift */; };
+		CF892A55220786320094A774 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF892A54220786320094A774 /* dateCell.swift */; };
 		CFBE8C7421EF62140059C661 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7321EF62140059C661 /* ProfileImageView.swift */; };
 		CFBE8C7721EF66020059C661 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7621EF66020059C661 /* Database.swift */; };
 		CFBE8C7E21EFCA310059C661 /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */; };
@@ -156,6 +160,10 @@
 		CF892A46220713480094A774 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
 		CF892A47220713480094A774 /* AlertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
 		CF892A4A22071C220094A774 /* AlertSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSectionController.swift; sourceTree = "<group>"; };
+		CF892A4E22074D850094A774 /* EventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
+		CF892A4F22074D850094A774 /* EventsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsCell.xib; sourceTree = "<group>"; };
+		CF892A52220767E00094A774 /* EventSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionController.swift; sourceTree = "<group>"; };
+		CF892A54220786320094A774 /* dateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
 		CFBE8C7321EF62140059C661 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		CFBE8C7621EF66020059C661 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		CFBE8C7D21EFCA310059C661 /* PageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
@@ -255,6 +263,7 @@
 				CF892A3822060FCB0094A774 /* GenericCellSectionController.swift */,
 				CF892A3D2206356C0094A774 /* OptionsSectionController.swift */,
 				CF892A4A22071C220094A774 /* AlertSectionController.swift */,
+				CF892A52220767E00094A774 /* EventSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -403,6 +412,16 @@
 			path = " alert cell";
 			sourceTree = "<group>";
 		};
+		CF892A4D22074CBE0094A774 /* EventsCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF892A4E22074D850094A774 /* EventsCell.swift */,
+				CF892A4F22074D850094A774 /* EventsCell.xib */,
+				CF892A54220786320094A774 /* dateCell.swift */,
+			);
+			path = EventsCell;
+			sourceTree = "<group>";
+		};
 		CFBE8C6F21EF60060059C661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +439,7 @@
 		CFBE8C7021EF60120059C661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF892A4D22074CBE0094A774 /* EventsCell */,
 				CF892A43220712B70094A774 /*  alert cell */,
 				CF892A3A220630E10094A774 /* options sell */,
 				CF2452442205C48900535C05 /* Header cell */,
@@ -663,6 +683,7 @@
 				CF892A35220609A20094A774 /* SectionHeaderCell.xib in Resources */,
 				CF3D72BE21EF44A50056CA88 /* Assets.xcassets in Resources */,
 				CFE823E821F0EFEE00ED5604 /* ControllerCell.xib in Resources */,
+				CF892A5122074D850094A774 /* EventsCell.xib in Resources */,
 				CF892A2C2205E95B0094A774 /* DocumentCell.xib in Resources */,
 				CF3D72BC21EF44A20056CA88 /* Main.storyboard in Resources */,
 				CFE8241B21F5E7A400ED5604 /* Group.storyboard in Resources */,
@@ -781,6 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF892A5022074D850094A774 /* EventsCell.swift in Sources */,
 				CFE8241021F25DA500ED5604 /* SquareButtonModel.swift in Sources */,
 				CF39D45422031473007286DD /* CBTabItemAnimation.swift in Sources */,
 				CF892A4222063D200094A774 /* Forwarding delegate.swift in Sources */,
@@ -805,11 +827,13 @@
 				CFE8242321F604B800ED5604 /* DocCell.swift in Sources */,
 				CF39D45622031473007286DD /* CBFlashyTabBar.swift in Sources */,
 				CFE8240021F2036900ED5604 /* GroupModel.swift in Sources */,
+				CF892A55220786320094A774 /* dateCell.swift in Sources */,
 				CFBE8C8821EFE3500059C661 /* UIViewExtensions.swift in Sources */,
 				CFE8240221F2065900ED5604 /* DocumentsModel.swift in Sources */,
 				CFBE8C8621EFDB0F0059C661 /* SubjectModel.swift in Sources */,
 				CF39D45322031473007286DD /* CBTabItemBasicAnimation.swift in Sources */,
 				CF892A48220713480094A774 /* AlertCell.swift in Sources */,
+				CF892A53220767E00094A774 /* EventSectionController.swift in Sources */,
 				CFE823DB21F0CBB000ED5604 /* GenericCell.swift in Sources */,
 				CF892A4B22071C220094A774 /* AlertSectionController.swift in Sources */,
 				CF892A3722060CF00094A774 /* SectionHeaderSectionController.swift in Sources */,
@@ -1011,7 +1035,10 @@
 				DEVELOPMENT_TEAM = 44FZM7794V;
 				INFOPLIST_FILE = School/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.MySchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1029,7 +1056,10 @@
 				DEVELOPMENT_TEAM = 44FZM7794V;
 				INFOPLIST_FILE = School/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.MySchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1046,7 +1076,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1064,7 +1098,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1081,7 +1119,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1098,7 +1140,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = SchoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinand.SchoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

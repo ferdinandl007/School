@@ -23,7 +23,10 @@ struct SubjectModel {
     let Updates: [GenericModel]
     let documents: [DocumentsModel]
     let onTime: OnTime
-    init(_ID: String,_image: UIImage,_subjectName: String,_info: String,_Updates: [GenericModel],_documents: [DocumentsModel],_onTime: OnTime) {
+    let events: [EventsModel]?
+    let sethomeWork: [GenericModel]?
+    
+    init(_ID: String,_image: UIImage,_subjectName: String,_info: String,_Updates: [GenericModel],_documents: [DocumentsModel],_onTime: OnTime, _events: [EventsModel]?, _sethomeWork: [GenericModel]?) {
         iD = _ID
         image = _image
         subjectName = _subjectName
@@ -31,5 +34,7 @@ struct SubjectModel {
         Updates = _Updates
         documents = _documents
         onTime = _onTime
+        events = _events
+        sethomeWork = _sethomeWork
     }
 }

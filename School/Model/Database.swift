@@ -92,21 +92,38 @@ class Database {
     
     
     func getToDaysSubjects() -> [SubjectModel] {
-        var data =  [SubjectModel]()
-        var updates =  [GenericModel]()
-        
-        
+        var data = [SubjectModel]()
+        var updates = [GenericModel]()
+        var events = [EventsModel]()
+        var sethomeWork =  [GenericModel]()
+        let time = Date()
         for i in 0...4 {
             updates.append( GenericModel(ID: "\(i)", topLeftLabel: "Mr Saker", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Gnus versus Krokodil. Wenn die Augen mal wieder größer als der Magen sind ...vMehr davon bei #ErlebnisErde: Serengeti – Wettlauf ums Leben um 16:30 Uhr im Ersten"))
         }
         
+        sethomeWork.append( GenericModel(ID: "\(Int.random(in: 1...10000))", topLeftLabel: "Mr Saker", topRightLabel: "\(Int.random(in: 1...30))/\(Int.random(in: 1...12))/2018", mainText: "Bitte bearbeiten Sie die Arbeitsplätze die sie in der Klasse bekommen haben"))
+        
+
         
         
-        data.append(SubjectModel(_ID: "\(1)", _image: #imageLiteral(resourceName: "videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12"), _subjectName: "Naturwissenschaften", _info: "Raum 123A at 9:00 AM ", _Updates: updates, _documents: [], _onTime: .onTime))
-        data.append(SubjectModel(_ID: "\(2)", _image: #imageLiteral(resourceName: "Wirtschaft"), _subjectName: "Wirtschaft", _info: "Raum 13C at 11:45 AM ", _Updates: updates, _documents: [], _onTime: .change))
-        data.append(SubjectModel(_ID: "\(3)", _image: #imageLiteral(resourceName: "Englisch"), _subjectName: "Englisch", _info: "Raum 233B at 1:00 PM ", _Updates: updates, _documents: [], _onTime: .onTime))
-        data.append(SubjectModel(_ID: "\(4)", _image: #imageLiteral(resourceName: "Mathematik"), _subjectName: "Mathematik", _info: "Raum 10A at 2:00 PM ", _Updates: updates, _documents: [], _onTime: .cancelled))
-        data.append(SubjectModel(_ID: "\(5)", _image: #imageLiteral(resourceName: "Geographie"), _subjectName: "Geographie", _info: "Raum 189A at 3:45 PM ", _Updates: updates, _documents: [], _onTime: .onTime))
+        
+        events.append(EventsModel(mainLabels: "Bücher Referat", secondarylabel: "dieses Referat wird für 10% der Gesamtnote gelten", category: .referate, isPinned: false, date: Date(timeIntervalSince1970: time.timeIntervalSince1970 + Double.random(in: 0.0...20000000.0)), showDate: true))
+        events.append(EventsModel(mainLabels: "Halb Jahrestest", secondarylabel: "Der test wird für 30% der Gesamtnote gelten", category: .tests, isPinned: false, date: Date(timeIntervalSince1970: time.timeIntervalSince1970 + Double.random(in: 10000000.0...20000000.0)), showDate: false))
+        
+        events.append(EventsModel(mainLabels: "Quartals Klassenarbeit", secondarylabel: "diese Klassenarbeit wird für 15% der Gesamtnote gelten", category: .klassenarbeiten, isPinned: true, date: Date(timeIntervalSince1970: time.timeIntervalSince1970 + Double.random(in: 17000000.0...20000000.0)), showDate: true))
+        
+        
+
+        
+        data.append(SubjectModel(_ID: "\(1)", _image: #imageLiteral(resourceName: "videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12"), _subjectName: "Naturwissenschaften", _info: "Raum 123A at 9:00 AM ", _Updates: updates, _documents: [], _onTime: .onTime, _events: nil, _sethomeWork: sethomeWork))
+        
+        data.append(SubjectModel(_ID: "\(2)", _image: #imageLiteral(resourceName: "Wirtschaft"), _subjectName: "Wirtschaft", _info: "Raum 13C at 11:45 AM ", _Updates: updates, _documents: [], _onTime: .change, _events: events, _sethomeWork: nil))
+        
+        data.append(SubjectModel(_ID: "\(3)", _image: #imageLiteral(resourceName: "Englisch"), _subjectName: "Englisch", _info: "Raum 233B at 1:00 PM ", _Updates: updates, _documents: [], _onTime: .onTime, _events: events, _sethomeWork: sethomeWork))
+        
+        data.append(SubjectModel(_ID: "\(4)", _image: #imageLiteral(resourceName: "Mathematik"), _subjectName: "Mathematik", _info: "Raum 10A at 2:00 PM ", _Updates: updates, _documents: [], _onTime: .cancelled, _events: events, _sethomeWork: sethomeWork))
+        
+        data.append(SubjectModel(_ID: "\(5)", _image: #imageLiteral(resourceName: "Geographie"), _subjectName: "Geographie", _info: "Raum 189A at 3:45 PM ", _Updates: updates, _documents: [], _onTime: .onTime, _events: nil, _sethomeWork: nil))
         
         return data
     }
